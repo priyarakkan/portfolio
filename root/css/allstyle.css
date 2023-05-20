@@ -67,7 +67,7 @@ font-family: 'Prata', serif;*/
   }
   p, h1, h2, h3 { color: var(--text-color);
 text-align: var(--align);}
-
+  
   p {font: var(--font-size-par) 'Poppins', sans-serif;}
   h1 {font: var(--font-size-title) 'Poppins', sans-serif;}
   h2 {font: var(--font-size-subheading) 'Poppins', sans-serif;}
@@ -241,22 +241,44 @@ text-align: var(--align);}
   body{background-color: var(--body-color);}
   .aboutmeSection {
     padding: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+    display: grid;
+   justify-content: center;
+    row-gap: 2rem;
     padding: 5rem 0 0 0;
     margin: 5rem 0 0 0;
+   
   }
   .aboutInfo {
-    display: flex;
+    display: grid;
+   /* grid-template-columns: 450px; */
+    text-align: center;
+    justify-content: center;
+    row-gap: 2rem;
   }
    .selfPic {
-    width: 75%;
-    height: 75%;
+    width: 100%;
+    height:100%;
     border-radius: 50%;
     border: solid 2px var(--header-color);
     max-width: 300px;
+    
+    /* margin-left: 8%; */
+  }
+  .aboutImg{
+    display: grid;
+    justify-content: center;
+  }
+  .buttonH {
+    width: 25%;
+    padding:1rem;
+    border: solid 2px var(--header-color);
+    border-radius:var(--border-radius);
+    background-color: var(--headline-color);
+    color: var(--text-color);
+   margin-left: 37%;
+   font: 1.2rem 'Poppins', sans-serif;
+   
+    
   }  
    /**********************
     3.2.1 Header blur 
@@ -433,7 +455,7 @@ text-align: var(--align);}
     display:grid;
     justify-content: center;
   }
-  .button{
+  .buttonF{
     border: solid 2px var(--body-color);
     border-radius:var(--border-radius);
     background-color: var(--headline-color);
@@ -468,8 +490,11 @@ text-align: var(--align);}
    display: inline-block
   }
   /* --media queries-- */
-  
-  
+  @media screen and (min-width: 500px) {
+    .aboutInfo {
+      grid-template-columns: 450px; 
+  }
+}
   @media screen and (min-width: 700px) {
     .hamburger{display: none;}
     .home {background-image: url(../images/700-936Tab.jpg); }
@@ -493,10 +518,20 @@ text-align: var(--align);}
     margin-top: 3rem;
   }
   .aboutmeSection{
-    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20%;
+    column-gap: 1rem;
+    margin-right: 1rem;
+  }
+  .selfPic {
+    margin-left: 0;
+    max-width: none;
+  }
+  .buttonH{
+    
+    font: 1.7rem 'Poppins', sans-serif; 
     
   }
-
   }
 
   @media screen and (min-width: 1100px) {
