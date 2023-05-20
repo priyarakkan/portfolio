@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+     <!--google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+ 
+    <!--  font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <header class="subPage">
+        <h1 class="logoSub">
+            <a href="index.html">Rp</a>
+        </h1> 
+        <nav>
+            <div>
+                <ul class="menu">
+                    <li><a href="about.html" class="menuItem" >About Me</a></li>
+                    <li><a  href="skills.html" class="menuItem">Skills</a></li>
+                    <li><a href="qualification.html" class="menuItem" >Qualification</a></li>
+                    <li><a  href="services.html" class="menuItem">Services</a></li>
+                    <li><a class="menuItem"><span class="currentPage">Projects</span></a></li>
+                        
+                </ul>
+            </div>  
+
+            <button class="hamburger">
+                <i class="fa-solid fa-bars" id="menuIcon"></i>
+                <i class="fa-solid fa-xmark-large" id="close"></i>
+
+            </button>
+        </nav>            
+    </header>
+    
+    
+   <section class="projectSection" id="project">
+    <section class="carousel">
+        <button class="carouselBtn leftBtn isHidden">
+            <i class="fa-solid fa-circle-arrow-left"></i>
+        </button>
+
+         <div class="carouselContainer">
+            <ul class="carouselItems">
+                <li class="carouselSlide currentSlide">
+                    <h2>HOME</h2>
+                    <img src="../pro img fi/home-lg.png" alt="image description">
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, doloremque aut. Maxime modi minima pariatur dignissimos eius distinctio vero veniam quaerat debitis libero. Labore cum deleniti excepturi nihil obcaecati fugit?</p> -->
+                </li>
+                <li class="carouselSlide">
+                    <h2>ABOUT</h2>
+                    <img src="../pro img fi/about-lg.png" alt="image description">
+                    <!-- <p>Quasi ducimus, laboriosam autem eum commodi porro eaque cupiditate voluptatum, eius illo ex corporis! </p> -->
+                </li>
+                <li class="carouselSlide">
+                    <h2>COTTAGES</h2>
+                    <img src="../pro img fi/cottages-lg.png" alt="image description">
+                    <!-- <p>Veritatis exercitationem reprehenderit atque ducimus debitis, accusantium facere ullam placeat corrupti quam fuga. Reiciendis quia temporibus perspiciatis officiis quibusdam doloremque earum mollitia beatae architecto nobis. Asperiores sed accusamus est placeat?</p> -->
+                </li>
+                <li class="carouselSlide">
+                    <h2>RESERVATION</h2>
+                    <img src="../pro img fi/reserv-lg.png" alt="image description">
+                    <!-- <p>Sequi necessitatibus laborum perspiciatis, cumque consequatur quas culpa, voluptatibus at repellendus recusandae, veniam omnis dolorem facilis praesentium. Excepturi facere asperiores temporibus quis rem eius! Fuga rem culpa aperiam ab ducimus.</p> -->
+                </li>
+                <li class="carouselSlide">
+                    <h2>SERVICES</h2>
+                    <img src="../pro img fi/service-lg.png" alt="image description">
+                    <!-- <p>Dignissimos, inventore omnis dolorem rem magnam reiciendis magni explicabo quas aliquam doloremque hic voluptas temporibus excepturi at modi natus non placeat enim quod? Laborum, in fugiat voluptate consequatur rerum est?</p> -->
+                </li>
+                <li class="carouselSlide">
+                    <h2>CONTACT</h2>
+                    <img src="../pro img fi/contact-lg.png" alt="image description">
+                    <!-- <p>Autem rerum porro consequatur ab voluptatum, et quod ullam nemo id placeat laborum quo incidunt error voluptatibus praesentium, cumque nulla? Eum natus ad consequatur laborum omnis illum a eaque voluptas.</p> -->
+                </li>
+            </ul>
+        </div>
+        <button class="carouselBtn rightBtn">
+            <i class="fa-solid fa-circle-arrow-right"></i>
+        </button>
+
+        <nav class="carouselNav">
+            <button class="carouselIndicator currentSlide"></button>
+            <button class="carouselIndicator"></button>
+            <button class="carouselIndicator"></button>
+            <button class="carouselIndicator"></button>
+            <button class="carouselIndicator"></button>
+            <button class="carouselIndicator"></button>
+        </nav>
+    </section>
+   </section>
+    
+    <script>
+        const slideWrapper = document.querySelector('.carouselItems');
+const slides = Array.from(slideWrapper.children);
+  console.log(slides);
+const nextBtn = document.querySelector('.rightBtn');
+const prevBtn = document.querySelector('.leftBtn');
+const dotsNav = document.querySelector('.carouselNav');
+const dots = Array.from(dotsNav.children);
+  console.log(dots);
+
+const slideWidth = slides[0].getBoundingClientRect().width;
+console.log(slideWidth);
+
+// convert above to a named function
+const setSlidePosition = (slide, index) => {
+  slide.style.left = slideWidth * index + 'px';
+};
+
+slides.forEach(setSlidePosition);
+
+// Reusable functions ---
+const moveToSlide = (slideWrapper, currentSlide, targetSlide) => {
+  slideWrapper.style.transform =  'translateX(-' + targetSlide.style.left + ')';
+  currentSlide.classList.remove('currentSlide');
+  targetSlide.classList.add('currentSlide');
+}
+
+const updateDots = (currentDot, targetDot) => {
+  currentDot.classList.remove('currentSlide');
+  targetDot.classList.add('currentSlide');
+}
+
+const hideShowArrows = (slides, prevBtn, nextBtn, targetIndex) => {
+  if(targetIndex === 0) {
+    prevBtn.classList.add('isHidden');
+    nextBtn.classList.remove('isHidden');
+  } else if (targetIndex === slides.length - 1) {
+    prevBtn.classList.remove('isHidden');
+    nextBtn.classList.add('isHidden');
+  } else {
+    prevBtn.classList.remove('isHidden');
+    nextBtn.classList.remove('isHidden');
+  }
+}
+
+// -- end reusbale functions
+
+// next button
+nextBtn.addEventListener('click', e => {
+  const currentSlide = slideWrapper.querySelector('.currentSlide');
+  const nextSlide = currentSlide.nextElementSibling;
+  const currentDot = dotsNav.querySelector('.currentSlide');
+  const nextDot = currentDot.nextElementSibling;
+  const nextIndex = slides.findIndex(slide => slide === nextSlide);
+  moveToSlide(slideWrapper, currentSlide, nextSlide);
+  updateDots(currentDot, nextDot);
+  hideShowArrows(slides, prevBtn, nextBtn, nextIndex);
+});
+
+//previous button
+prevBtn.addEventListener('click', e => {
+  const currentSlide = slideWrapper.querySelector('.currentSlide');
+  const prevSlide = currentSlide.previousElementSibling;
+  const currentDot = dotsNav.querySelector('.currentSlide');
+  const prevDot = currentDot.previousElementSibling;
+  const prevIndex = slides.findIndex(slide => slide === prevSlide);
+  moveToSlide(slideWrapper, currentSlide, prevSlide);
+  updateDots(currentDot, prevDot);
+  hideShowArrows(slides, prevBtn, nextBtn, prevIndex);
+});
+
+//  dot indicators
+dotsNav.addEventListener('click', e => {
+  // const targetDot = e;
+  // console.log(e.target);
+  const targetDot = e.target.closest('button');
+
+  console.log('test1');
+  // prevent the code from workign if its not a button
+  if(!targetDot) return;
+  console.log('test2');
+  const currentSlide = slideWrapper.querySelector('.currentSlide');
+  const currentDot = dotsNav.querySelector('.currentSlide');
+  const targetIndex = dots.findIndex(dot => dot === targetDot);
+  console.log(targetIndex);
+  const targetSlide = slides[targetIndex];
+  console.log(targetSlide);
+  moveToSlide(slideWrapper, currentSlide, targetSlide);
+  updateDots(currentDot, targetDot);
+  hideShowArrows(slides, prevBtn, nextBtn, targetIndex);
+  
+})
+
+function debounce(func, delay) {
+  let timerId;
+  return function() {
+    const context = this;
+    const args = arguments;
+    clearTimeout(timerId);
+    timerId = setTimeout(function() {
+      func.apply(context, args);
+    }, delay);
+  }
+}
+// DEALING WITH RESIZE AND ENSURING PAGE LOOKS OK
+window.addEventListener('resize', debounce(function() {
+
+  // RELOAD OF THE PAGE
+  location.reload();
+
+},100))
+
+    </script>
+</body>
+</html>
+
