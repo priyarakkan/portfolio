@@ -248,6 +248,9 @@ text-align: var(--align);}
     padding: 5rem 0 0 0;
     margin: 5rem 0 0 0;
   }
+  .aboutInfo {
+    display: flex;
+  }
    .selfPic {
     width: 75%;
     height: 75%;
@@ -271,7 +274,9 @@ text-align: var(--align);}
     left: 0;
     z-index: -1;
   }
-
+/* .aboutmeSection{
+  display: grid;
+} */
 
   /**********************
     4. SKILLS
@@ -475,8 +480,8 @@ text-align: var(--align);}
       border-bottom: none;
       right: 0;
       justify-content:right;
-      width: 100%;
-      left: 5rem;
+      width: 85%;
+      
     }
     nav li {
       border-bottom: none;
