@@ -203,12 +203,14 @@ text-align: var(--align);}
 .showMenu {transform: translateY(0);}
   body{background-color: var(--body-color);}
   .aboutmeSection {
+    
     padding: 5%;
     display: grid;
     justify-content: center;
     row-gap: 2rem;
     padding: 5rem 0 0 0;
     margin: 5rem 0 0 0;
+    
    
   }
   .aboutInfo {
@@ -238,8 +240,6 @@ text-align: var(--align);}
     text-align: center;
    margin-left: 37%;
    font: 1.2rem 'Poppins', sans-serif;
-   
-    
   }  
    /**********************
     3.2.2 Header blur 
@@ -322,9 +322,9 @@ text-align: var(--align);}
   .projectSection{padding: 100px 0;
     z-index: 100;}
   .carousel {
-    width: 80%;
+    width: 100vw;
     max-width: 75%;
-    height: 500px;
+    height: 100vh;
     margin: 0 auto;
     position: relative;
    
@@ -472,10 +472,10 @@ text-align: var(--align);}
     }
     .aboutmeSection{
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 10%;
+    margin-top: 20%;
     column-gap: 1rem;
     margin-right: 0;
-    /* max-width: 850px; */
+    max-width: 850px;
     justify-content: center;
    }
   .selfPic {max-width: 400px;}

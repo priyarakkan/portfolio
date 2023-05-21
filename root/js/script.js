@@ -43,18 +43,23 @@ const dots = Array.from(dotsNav.children);
 console.log(dots);
 
 const slideWidth = slides[0].getBoundingClientRect().width;
+const slideHeight = slides[0].getBoundingClientRect().height;
 console.log(slideWidth);
+console.log(slideHeight);
 
 // convert above to a named function
 const setSlidePosition = (slide, index) => {
 slide.style.left = slideWidth * index + 'px';
+// slide.style.top = slideHeight * index + 'px';
 };
-
+ 
 slides.forEach(setSlidePosition);
+console.log(setSlidePosition)
 
 // Reusable functions ---
 const moveToSlide = (slideWrapper, currentSlide, targetSlide) => {
 slideWrapper.style.transform =  'translateX(-' + targetSlide.style.left + ')';
+// slideWrapper.style.transform =  'translateY(-' + targetSlide.style.top + ')';
 currentSlide.classList.remove('currentSlide');
 targetSlide.classList.add('currentSlide');
 }
@@ -105,8 +110,6 @@ hideShowArrows(slides, prevBtn, nextBtn, prevIndex);
 
 //  dot indicators
 dotsNav.addEventListener('click', e => {
-// const targetDot = e;
-// console.log(e.target);
 const targetDot = e.target.closest('button');
 
 console.log('test1');
