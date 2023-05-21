@@ -336,7 +336,7 @@ text-align: var(--align);}
    
   }
     .carouselContainer {
-    background-color: var(--primaryLight);
+    /* background-color: var(--primaryLight); */
     height: 100%;
     width: 80%;
     position: relative;
@@ -356,10 +356,11 @@ text-align: var(--align);}
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--primaryLight);
+    /* background-color: var(--primaryLight); */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 1.5rem;
   }
   
@@ -408,6 +409,16 @@ text-align: var(--align);}
     padding-top: 35px;
     padding-bottom: 35px;
     background-color: var(--header-color);
+    display:grid;
+    justify-content: center;
+  }
+  .button{
+    border: solid 2px var(--body-color);
+    border-radius:var(--border-radius);
+    background-color: var(--headline-color);
+    color: var(--text-color);
+    margin:2rem 0;
+    /* justify-self: center; */
   }
  /**********************
     6. CONTACT
@@ -416,6 +427,7 @@ text-align: var(--align);}
     padding: 5rem 0 1rem 0;
   }
   .cantactData{
+    position: relative;
     display: grid;
     row-gap: 1rem;
     padding: 2rem 0;
@@ -426,8 +438,18 @@ text-align: var(--align);}
   #contact {
     margin: 0 2rem;
   }
+  #msg{
+    height: 10rem;
+  }
   label{
     color: var(--text-color);
+  }
+  #submit{
+   margin: 3rem 0;
+   background-color: var(--headline-color);
+   color: var(--text-color);
+   border-radius: 7px;
+   justify-self: center;
   }
   /* --media queries-- */
   
