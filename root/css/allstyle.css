@@ -479,10 +479,14 @@ text-align: var(--align);}
     align-items: center;
     width: 100%;
   }
+  input{
+    border-radius: 0.5rem;
+  }
   #contact {margin: 0 2rem;}
   #msg{height: 10rem;}
   label{
     color: var(--text-color);
+    
   }
   #submit{
    margin: 3rem 0;
