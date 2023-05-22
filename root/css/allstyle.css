@@ -229,6 +229,7 @@ text-align: var(--align);}
   }
   .buttonH {
     width: 25%;
+    display: block;
     padding:1rem;
     border: solid 2px var(--header-color);
     border-radius:var(--border-radius);
@@ -309,7 +310,8 @@ text-align: var(--align);}
     height: 250px;
     background-color: var(--header-color);
 }
-.serviceTitle {padding: 2rem;}
+.serviceTitle {padding: 2rem;
+margin: 1rem 0;}
 
     
   /**********************
@@ -492,6 +494,7 @@ text-align: var(--align);}
 
   @media screen and (min-width: 1100px) {
     .home {background-image: url(../images/1020-755Web.jpg); }
+    .carousel {height: 950px;}
     .aboutmeSection, .skillsSection,.serviceSection, .projectSection,.sectionContact{max-width: 1100px;
       margin:auto;
   }
