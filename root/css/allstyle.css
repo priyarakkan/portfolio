@@ -136,8 +136,7 @@ text-align: var(--align);}
     display: flex;
     background-color: var(--footer-color);
     top: 0;
-    left: 0;
-  }
+   }
   .logoSub {
     font: 4.5em 'Akronim', cursive;
     cursor: pointer;
@@ -203,15 +202,12 @@ text-align: var(--align);}
 .showMenu {transform: translateY(0);}
   body{background-color: var(--body-color);}
   .aboutmeSection {
-    
     padding: 5%;
     display: grid;
     justify-content: center;
     row-gap: 2rem;
     padding: 5rem 0 0 0;
-    margin: 5rem 0 0 0;
-    
-   
+    margin: 5rem 0 0 0; 
   }
   .aboutInfo {
     display: grid;
@@ -245,7 +241,6 @@ text-align: var(--align);}
     3.2.2 Header blur 
   ***********************/
   .blur-header {background-color: transparent;}
-
   .blur-header::after{
     content: '';
     position: absolute;
@@ -322,9 +317,9 @@ text-align: var(--align);}
   .projectSection{padding: 100px 0;
     z-index: 100;}
   .carousel {
-    width: 100vw;
+    width: 80%;
     max-width: 75%;
-    height: 100vh;
+    height: 400px;
     margin: 0 auto;
     position: relative;
    
@@ -447,7 +442,10 @@ text-align: var(--align);}
   @media screen and (min-width: 500px) {
     .aboutInfo {grid-template-columns: 450px;}
     #skillsInfo1, #skillsInfo2 {grid-template-columns: repeat(2, 1fr);}
+    .carousel {height: 500px;}
 }
+@media screen and (min-width: 500px) {
+  .carousel {height: 600px;}}
   @media screen and (min-width: 700px) {
     .hamburger{display: none;}
     .home {background-image: url(../images/700-936Tab.jpg); }
@@ -486,15 +484,10 @@ text-align: var(--align);}
     grid-template-columns: repeat(2, 1fr);
     padding-top: 2%;
   }
-  .sectionSubtitle{
-    padding-bottom: 2%;
-  }
-  h2.serviceTitle{
-    padding: 2% 0;
-  }
-  .serviceCards{
-    width:250px;
-  }
+  .sectionSubtitle{padding-bottom: 2%;}
+  h2.serviceTitle{padding: 2% 0;}
+  .serviceCards{width:250px;}
+  .carousel {height: 850px;}
   }
 
   @media screen and (min-width: 1100px) {

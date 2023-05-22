@@ -30,7 +30,6 @@ const blurHeader = () => {
 }
 window.addEventListener('scroll', blurHeader)
 
-
 /*============== causel ========*/
 
 const slideWrapper = document.querySelector('.carouselItems');
@@ -43,14 +42,12 @@ const dots = Array.from(dotsNav.children);
 console.log(dots);
 
 const slideWidth = slides[0].getBoundingClientRect().width;
-const slideHeight = slides[0].getBoundingClientRect().height;
 console.log(slideWidth);
-console.log(slideHeight);
+
 
 // convert above to a named function
 const setSlidePosition = (slide, index) => {
 slide.style.left = slideWidth * index + 'px';
-// slide.style.top = slideHeight * index + 'px';
 };
  
 slides.forEach(setSlidePosition);
