@@ -43,7 +43,43 @@
             </section>
         </div> 
     </header>
+    <main>
+        <div class="containerContactPage">
+            <section class="subPage">
+                <h2 class="title">Thank you for visiting my website and viewing my portfolio.</h2>
+                <p>If you would like to send me an email, please feel free to contact me using the form below. Enter your contact information completely with a short message.</p>
+                
+                <form action="#" method="post" id="contact" class="contactForm">
+                    <fieldset class="contactSection">
+                        <legend>Contact Details</legend>
+                        <label for="yourName">Your Name* (required)</label>
+                        <input type="text" id="yourName" name="yourName" class="contactInfo" required>
 
+                        <label for="yourEmail">Your Email* (required)</label>
+                        <input type="email" id="email" name="email" class="contactInfo" required>
+
+                        <label for="companyName">Company</label>
+                        <input type="text" id="companyName" name="yourCompany" class="contactInfo">
+
+                        <label for="aboutMe">How did you hear about me?*</label>
+                        <select name="select" class="contactSelect">
+                            <option value="Select An Option" class="dropdowns">Select An Option</option>
+                            <option value="Friend" class="dropdowns">Friend</option>
+                            <option value="Google" class="dropdowns">Google</option>
+                            <option value="Social Media" class="dropdowns">Social Media</option>
+                            <option value="Other" class="dropdowns">Other</option>
+                        </select>
+
+                        <label for="yourMessage"> Your Message* (required)</label>
+                        <textarea name="yourMessage" class="contactTextarea" required></textarea>
+
+                        <input type="submit" value="Send Message" class="contactBtn">
+                        <p>You will receive a response as soon as possible.</p>
+                  </fieldset>
+                </form>          
+            </section>
+        </div>
+    </main>
     <footer class="footerBg">
         <div class="footerContent">
             <p class="footerBottomLinks"><a href="../index.html">Home</a> | <a href="../pages/portfolio.html">Portfolio</a> | <a href="../pages/about.html">About</a> | 

@@ -418,7 +418,7 @@ footer{
 }
 
 /***********************************************************
-    4. Sub Page - About
+    4.A Sub Page - About
 ************************************************************/
 .heroTextSubpage{
     height: 350px;
@@ -429,8 +429,22 @@ footer{
 
 
 
-
-
+/***********************************************************
+    4.C Sub Page - Contact
+************************************************************/
+.containerContactPage{
+    margin:0 auto;
+    width:100%;
+    padding: 1rem 2rem;
+}
+form{
+    border: solid 0px #000;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
 
 
 
