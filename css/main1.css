@@ -218,6 +218,7 @@ img{
     margin: 0 auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 .heroBody{
     background-color: var(--primary-color);
@@ -225,8 +226,7 @@ img{
     height: 350px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-
-}
+    }
 .heroInner{
     display: grid;
 }
@@ -249,10 +249,10 @@ img{
     margin:0 3rem;
     padding:1rem 3.5rem;
 }
-.heroBtn{
+/* .heroBtn{
     margin: 2rem 5em;   
     text-align: center;
-}
+} */
 /***********************************************************
     4. Main body 
 ************************************************************/
@@ -280,7 +280,8 @@ img{
 }
 .portfolioSection{
     background-color: var(--mild-color);
-    padding-top: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 .portfolioPart{
     padding:0 1.5rem;
@@ -380,6 +381,12 @@ i.fa.fa-link:hover{
     /* border: solid 1px var(--border-color); */
     transition: opacity 0.2s 0s ease-in-out;
 }
+.viewPortfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 .subFeature{
     background-color: var(--border-color);
@@ -470,10 +477,13 @@ footer{
     .subPortfolioFeatures{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap
+        column-gap: 3rem;
 
     }
-
+    .subFeatureProcess{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;   
+    }
 }
 /* Large devices (desktops, 960px and up)*/
 @media screen and (min-width: 960px) {
