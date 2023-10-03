@@ -385,9 +385,7 @@ i.fa.fa-link:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
 .subFeature{
     background-color: var(--border-color);
     opacity: 83%;
