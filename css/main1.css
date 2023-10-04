@@ -468,7 +468,9 @@ footer{
         max-width: 700px; 
     }
     .subPortfolioFeatures{
-        grid-template-columns: repeat(1fr);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap
 
     }
 
