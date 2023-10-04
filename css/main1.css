@@ -223,8 +223,6 @@ img{
     background-color: var(--primary-color);
     position: relative;
     height: 350px;
-    /* max-width: 320px; */
-    /* margin: 0 auto; */
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 
@@ -439,10 +437,40 @@ footer{
 ************************************************************/
 /* Small devices (landscape phones, 576px and up)*/
 @media screen and (min-width: 576px) {
-
+    .mainPart, .portfolioPart{
+        max-width: 500px; 
+    }
 }
 /* Medium devices (tablets, 768px and up)*/
 @media screen and (min-width: 768px) {
+    .hamburger{
+        display: none;
+    }
+    .mainNav{
+        justify-content: none;   
+    }
+    .menu{
+        z-index:100000;
+        transform: translateX(0);
+        display:flex;
+        flex-direction: row;
+        position:relative;
+       left:0px;
+        top:20px;
+        justify-content: space-between;
+        align-items: center;
+        padding: auto 1rem;
+    }
+    .mainBody{
+        flex-direction: row;
+    }
+    .mainPart, .portfolioPart{
+        max-width: 700px; 
+    }
+    .subPortfolioFeatures{
+        grid-template-columns: repeat(1fr);
+
+    }
 
 }
 /* Large devices (desktops, 960px and up)*/
