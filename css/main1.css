@@ -150,6 +150,10 @@ img{
     height: 420px;
     width:100%;
 }
+.heroProject{
+    height: 70px;
+    width:100%;
+}
 .mainNav{
     background-color: var(--nav-color);
     display: flex;
@@ -212,7 +216,11 @@ img{
 .hamburgerOpen .bar:nth-child(3){
     transform: translateY(-7px) rotate(-45deg);
 }
- .mainPart, .portfolioPart{
+ .mainPart, 
+ .portfolioPart,
+ .subPageAboutContent,
+ .porfolioContent,
+ .containerContactPage{
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
