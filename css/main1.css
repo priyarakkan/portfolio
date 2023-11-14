@@ -225,9 +225,9 @@ img{
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding: 1.5rem;
+   
+
 }
 .heroBody{
     background-color: var(--primary-color);
@@ -238,6 +238,9 @@ img{
     }
 .heroInner{
     display: grid;
+    margin:0 3rem;
+    padding:1rem 3.5rem;
+    height: 350px;
 }
 .mainHeading{
     color: var(--bg-color);
@@ -254,10 +257,7 @@ img{
     padding: .75em 2em;
     line-height: 1.25;
 }
-.heroInner{
-    margin:0 3rem;
-    padding:1rem 3.5rem;
-}
+
 /* .heroBtn{
     margin: 2rem 5em;   
     text-align: center;
@@ -274,7 +274,8 @@ img{
     justify-content: center;
     align-items: center;
 }
-.homepageIntro .title{
+.homepageIntro .title,
+.subPage .title{
     color:var(--border-color);
     text-align: center;
 }
@@ -291,6 +292,9 @@ img{
     background-color: var(--mild-color);
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+}
+.portfolioGrid{
+    padding-top: 1rem;
 }
 .portfolioPart{
     padding:0 1.5rem;
@@ -471,7 +475,7 @@ footer{
 .slideshow {
     position: relative;
     width: 100%;
-    min-height: 160px;
+    min-height: 260px;
 }
 .slideshow img{
     position: absolute;

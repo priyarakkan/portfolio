@@ -58,4 +58,7 @@ document.querySelectorAll('.imageModalContainer img').forEach(image => {
         document.querySelector('.popupImage').computedStyleMap.display = 'block';
         document.querySelector('.popupImage img').src = image.getAttribute('src');
     })
-})
+});
+document.querySelector('.popupImage span').addEventListener('click', () => {
+    document.querySelector('.popupImage').style.display = 'none';
+});
