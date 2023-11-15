@@ -446,8 +446,6 @@ footer{
     4.B Sub Page - Portfolio
 ************************************************************/
 
-
-
 /***********************************************************
     4.B.1 Sub Page - Portfolio - CWC & Framework
 ************************************************************/
@@ -568,7 +566,10 @@ form{
 @media screen and (min-width: 576px) {
     .mainPart, 
     .portfolioPart,
-    .subFeatureContent{
+    .subFeatureContent,
+    .porfolioContent,
+    .subPageAboutContent,
+    .containerContactPage{
         max-width: 500px; 
     }
 }
@@ -597,7 +598,10 @@ form{
     }
     .mainPart, 
     .portfolioPart,
-    .subFeatureContent{
+    .subFeatureContent,
+    .porfolioContent,
+    .subPageAboutContent,
+    .containerContactPage{
         max-width: 700px; 
     }
     .subPortfolioFeatures{
@@ -610,6 +614,14 @@ form{
         grid-template-columns: repeat(3, 1fr);
         column-gap: 3rem;   
     }
+    .portfolioGrid{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .portfolioGrid > *{
+        flex: 1 1 20rem;
+    }
 }
 /* Large devices (desktops, 960px and up)*/
 @media screen and (min-width: 960px) {
@@ -618,7 +630,10 @@ form{
     }
     .mainPart,
     .portfolioPart,
-    .subFeatureContent{
+    .subFeatureContent,
+    .porfolioContent,
+    .subPageAboutContent,
+    .containerContactPage{
         border: solid 0px pink;
         max-width: 860px;
     }
@@ -637,7 +652,10 @@ form{
 @media screen and (min-width: 1100px) {
     .mainPart,
     .portfolioPart,
-    .subFeatureContent{
+    .subFeatureContent,
+    .porfolioContent,
+    .subPageAboutContent,
+    .containerContactPage{
         border: solid 0px pink;
         max-width: 992px;
     }
@@ -652,7 +670,10 @@ form{
 @media screen and (min-width: 1200px) {
     .mainPart,
     .portfolioPart,
-    .subFeatureContent{
+    .subFeatureContent,
+    .porfolioContent,
+    .subPageAboutContent,
+    .containerContactPage{
         border: solid 0px pink;
         max-width: 1100px;
     }
