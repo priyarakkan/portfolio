@@ -220,6 +220,7 @@ img{
  .portfolioPart,
  .subPageAboutContent,
  .porfolioContent,
+ .subFeatureContent,
  .containerContactPage,
  .containerProject{
     width: 100%;
@@ -339,7 +340,8 @@ img{
     display: block;
     height: auto;
     max-width:100%;
-    position: relative;    
+    position: relative;   
+    width:100%; 
 }
 .myPortfolioWebsites .mask{
     align-items: center;
@@ -398,6 +400,7 @@ i.fa.fa-link:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    column-gap: 1rem;
 }
 .subFeature{
     background-color: var(--border-color);
@@ -558,17 +561,14 @@ form{
     padding: 2rem;
 }
 
-
-
-
-
-
 /***********************************************************
     4. Media Query
 ************************************************************/
 /* Small devices (landscape phones, 576px and up)*/
 @media screen and (min-width: 576px) {
-    .mainPart, .portfolioPart{
+    .mainPart, 
+    .portfolioPart,
+    .subFeatureContent{
         max-width: 500px; 
     }
 }
@@ -595,7 +595,9 @@ form{
     .mainBody{
         flex-direction: row;
     }
-    .mainPart, .portfolioPart{
+    .mainPart, 
+    .portfolioPart,
+    .subFeatureContent{
         max-width: 700px; 
     }
     .subPortfolioFeatures{
@@ -611,13 +613,54 @@ form{
 }
 /* Large devices (desktops, 960px and up)*/
 @media screen and (min-width: 960px) {
+    h2{
+        line-height: 1.5;
+    }
+    .mainPart,
+    .portfolioPart,
+    .subFeatureContent{
+        border: solid 0px pink;
+        max-width: 860px;
+    }
+    article.subFeatureContent{
+        gap: 8rem;
+    }
+    .projectGrid{
+        grid-template-columns: 2.65fr 1.5fr;
+    }
+    .slideshow{
+        min-height: 400px;
+    }
 
 }
 /* XL devices (large desktops, 1100px and up)*/
 @media screen and (min-width: 1100px) {
-
+    .mainPart,
+    .portfolioPart,
+    .subFeatureContent{
+        border: solid 0px pink;
+        max-width: 992px;
+    }
+    .portfolioGrid > * {
+        flex: 1 1 30rem;
+    }
+    .slideshow {
+        min-height: 460px;
+    }
 }
 /* XXL devices (large desktops, 1400px and up)*/
 @media screen and (min-width: 1200px) {
+    .mainPart,
+    .portfolioPart,
+    .subFeatureContent{
+        border: solid 0px pink;
+        max-width: 1100px;
+    }
+    section.feature.grid-row {
+        grid-template-columns: 2fr 1fr; 
+    }
+    .slideshow {
+        min-height: 530px;
+    }
     
 }
