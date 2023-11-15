@@ -92,6 +92,8 @@ table {
     --highlight-color:#EC78A7;
     --mild-color:#F197BC;
     --border-color:#5E0C2E;
+    --secondary-color:#333;
+    --gradient-color-bg:linear-gradient(#3e081e, #5e0c2e);
 
 }
 * {
@@ -557,6 +559,63 @@ form{
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    min-height: 200px;
+}
+input[type=text], input[type=email], textarea {
+    border: solid 1px var(--primary-color);
+    border-radius: 0.5rem;
+    color: var(--border-color);
+    padding: 0.75rem 0.5rem;
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    width: 100%;
+}
+input:focus, textarea:focus, select.contactSelect:focus{
+    outline: solid 1px var(--primary-color);
+    border: solid 1px var(--primary-color);
+    box-shadow: 0 0 3px var(--primary-color);
+}
+textarea{
+    min-height: 8em;
+    display: block;
+}
+label{
+    color: var(--secondary-color);
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+legend{
+    font-size: 2.2rem;
+    color:var(--primary-color);
+    margin-bottom: 10px;
+}
+fieldset.contentSelect{
+    border: none;
+}
+select.contactSelect{
+    background-color: var(--bg-color);
+    border: solid 1px var(--primary-color);
+    border-radius: 8px;
+    font-family: var(--primary-font);
+    font-size: 1.4rem;
+    padding: 0.8rem 0.6rem;
+    margin-bottom: 12px;
+}
+option{
+    color: var(--primary-color);
+}
+input.contactBtn{
+    background: var(--gradient-color-bg);
+    border: solid 1px var(--bg-color);
+    border-radius: 8px;
+    color: var(--bg-color);
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    padding: 14px 0px;
+    text-shadow: 3px 1px 1px var(--secondary-color);
+    width: 14rem;
 }
 
 /***********************************************************
@@ -572,9 +631,16 @@ form{
     .containerContactPage{
         max-width: 500px; 
     }
+    form { display: block; }
+    .slideshow{
+        min-height:330px;
+    }
 }
 /* Medium devices (tablets, 768px and up)*/
 @media screen and (min-width: 768px) {
+    h2{
+        line-height: 1.1;
+    }
     .hamburger{
         display: none;
     }
@@ -600,9 +666,16 @@ form{
     .portfolioPart,
     .subFeatureContent,
     .porfolioContent,
-    .subPageAboutContent,
-    .containerContactPage{
+    .subPageAboutContent
+    {
         max-width: 700px; 
+    }
+    .containerContactPage{
+        width: 100%;
+        margin: 0 auto;
+        border: solid 0px pink;
+        padding: 0.5rem 2rem;
+        max-width: 660px;
     }
     .subPortfolioFeatures{
         display: grid;
@@ -614,6 +687,7 @@ form{
         grid-template-columns: repeat(3, 1fr);
         column-gap: 3rem;   
     }
+
     .portfolioGrid{
         display: flex;
         flex-wrap: wrap;
@@ -632,8 +706,7 @@ form{
     .portfolioPart,
     .subFeatureContent,
     .porfolioContent,
-    .subPageAboutContent,
-    .containerContactPage{
+    .subPageAboutContent{
         border: solid 0px pink;
         max-width: 860px;
     }
@@ -654,8 +727,7 @@ form{
     .portfolioPart,
     .subFeatureContent,
     .porfolioContent,
-    .subPageAboutContent,
-    .containerContactPage{
+    .subPageAboutContent{
         border: solid 0px pink;
         max-width: 992px;
     }
@@ -672,8 +744,7 @@ form{
     .portfolioPart,
     .subFeatureContent,
     .porfolioContent,
-    .subPageAboutContent,
-    .containerContactPage{
+    .subPageAboutContent{
         border: solid 0px pink;
         max-width: 1100px;
     }
