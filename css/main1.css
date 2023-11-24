@@ -234,12 +234,18 @@ img{
     height: 350px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    }
+}
+/* .heroText{
+    padding-top:2.5em;
+} */
 .heroInner{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 4em; */
     margin:0 3rem;
     padding:1rem 3.5rem;
     height: 350px;
+    
 }
 .mainHeading{
     color: var(--bg-color);
@@ -253,7 +259,7 @@ img{
     color: var(--highlight-color);
     font-size: 2rem;
     text-align: center;
-    padding: .75em 2em;
+    padding: .75em .5em;
     line-height: 1.25;
 }
 
@@ -620,7 +626,6 @@ input.contactBtn{
     text-shadow: 3px 1px 1px var(--secondary-color);
     width: 14rem;
 }
-
 /***********************************************************
     4. Media Query
 ************************************************************/
@@ -786,9 +791,7 @@ input.contactBtn{
         max-width: 1100px;
     }
     .portfolioGrid{
-        
         column-gap: 10em;
-
     }
     section.feature.grid-row {
         grid-template-columns: 2fr 1fr; 
@@ -796,5 +799,6 @@ input.contactBtn{
     .slideshow {
         min-height: 500px;
     }
+    
     
 }
