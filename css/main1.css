@@ -463,7 +463,7 @@ footer{
 .projectSmallIcons{
     display: block;
     text-align: center;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 .projectSmallIcons img{
     width: 100px;
@@ -538,6 +538,13 @@ footer{
 }
 .websiteLink h3{
     text-align: center;
+    color: var(--border-color);
+}
+.websiteLink p{
+    text-align: center;
+    color: #EC78A7;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /***********************************************************
@@ -662,8 +669,7 @@ input.contactBtn{
     .portfolioPart,
     .subFeatureContent,
     .porfolioContent,
-    .subPageAboutContent
-    {
+    .subPageAboutContent{
         max-width: 700px; 
     }
     .containerContactPage{
@@ -677,7 +683,6 @@ input.contactBtn{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 3rem;
-
     }
     .subFeatureProcess{
         grid-template-columns: repeat(3, 1fr);
@@ -691,6 +696,10 @@ input.contactBtn{
     }
     .portfolioGrid > *{
         flex: 1 1 20rem;
+    }
+    .projectGridImage{
+        display: grid;
+        grid-template-columns: 3, 1fr;
     }
 }
 /* Large devices (desktops, 960px and up)*/
