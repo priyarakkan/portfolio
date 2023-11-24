@@ -164,9 +164,7 @@ img{
     position: relative;
     width:100%;
 }
-.logo{
-    padding-top: .5rem;
-}
+.logo{padding-top: .5rem;}
 .menu{
     position:fixed;
     right:0px;
@@ -229,8 +227,6 @@ img{
     max-width: 320px;
     margin: 0 auto;
     padding: 1.5rem;
-   
-
 }
 .heroBody{
     background-color: var(--primary-color);
@@ -486,12 +482,10 @@ footer{
     left: 0;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-
 }
 .slideshow img.mainPortfolioImage.active {
     opacity: 1;
 }
-
 .containerModal{
     position: relative;
     background-color: #fff;
@@ -542,7 +536,9 @@ footer{
     width: 100%;
     height: auto;
 }
-
+.websiteLink h3{
+    text-align: center;
+}
 
 /***********************************************************
     4.C Sub Page - Contact
