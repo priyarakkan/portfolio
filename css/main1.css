@@ -637,7 +637,21 @@ input.contactBtn{
     form { display: block; }
     .slideshow{
         min-height:330px;
+        align-self: center;
     }
+    .containerProject{
+        max-width: 80%;
+    }
+    .projectGridImage{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;  
+        justify-content: center; 
+        align-items: center;
+    }
+    .websiteLink{
+        grid-column: 1/-1;
+    }
+
 }
 /* Medium devices (tablets, 768px and up)*/
 @media screen and (min-width: 768px) {
@@ -651,7 +665,7 @@ input.contactBtn{
         justify-content: none;   
     }
     .menu{
-        z-index:100000;
+        z-index:1;
         transform: translateX(0);
         display:flex;
         flex-direction: row;
@@ -672,6 +686,12 @@ input.contactBtn{
     .subPageAboutContent{
         max-width: 700px; 
     }
+    .portfolioGrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2em;
+
+    }
     .containerContactPage{
         width: 100%;
         margin: 0 auto;
@@ -689,18 +709,15 @@ input.contactBtn{
         column-gap: 3rem;   
     }
 
-    .portfolioGrid{
+    /* .portfolioGrid{
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
     }
     .portfolioGrid > *{
         flex: 1 1 20rem;
-    }
-    .projectGridImage{
-        display: grid;
-        grid-template-columns: 3, 1fr;
-    }
+    } */
+    
 }
 /* Large devices (desktops, 960px and up)*/
 @media screen and (min-width: 960px) {
@@ -715,11 +732,23 @@ input.contactBtn{
         border: solid 0px pink;
         max-width: 860px;
     }
+    .containerProject{
+        max-width: 90%;
+    }
     article.subFeatureContent{
         gap: 8rem;
     }
+    .portfolioGrid{
+        column-gap: 4em;
+
+    }
+    .projectGridContent p,
+    .projectGridContent h3{
+        padding-left: 1em;
+    }
     .projectGrid{
         grid-template-columns: 2.65fr 1.5fr;
+        column-gap: 1em;
     }
     .slideshow{
         min-height: 400px;
@@ -736,9 +765,12 @@ input.contactBtn{
         border: solid 0px pink;
         max-width: 992px;
     }
-    .portfolioGrid > * {
-        flex: 1 1 30rem;
+    .portfolioGrid{
+        column-gap: 6em;
     }
+    /* .portfolioGrid > * {
+        flex: 1 1 30rem;
+    } */
     .slideshow {
         min-height: 460px;
     }
@@ -753,11 +785,16 @@ input.contactBtn{
         border: solid 0px pink;
         max-width: 1100px;
     }
+    .portfolioGrid{
+        
+        column-gap: 10em;
+
+    }
     section.feature.grid-row {
         grid-template-columns: 2fr 1fr; 
     }
     .slideshow {
-        min-height: 530px;
+        min-height: 500px;
     }
     
 }
