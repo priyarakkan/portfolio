@@ -278,6 +278,7 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 1.5rem;
 }
 .homepageIntro .title,
 .subPage .title{
@@ -638,6 +639,10 @@ input.contactBtn{
     .subPageAboutContent,
     .containerContactPage{
         max-width: 500px; 
+    }
+    .heroInner{
+        padding-top: 2.5em;
+        row-gap: 4em;
     }
     form { display: block; }
     .slideshow{
