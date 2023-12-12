@@ -231,7 +231,7 @@ img{
 .heroBody{
     background-color: var(--primary-color);
     position: relative;
-    height: 350px;
+    height: 370px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
@@ -262,7 +262,49 @@ img{
     padding: .75em .5em;
     line-height: 1.25;
 }
-
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialMedia{
+    background-color: var(--mild-color);
+    margin-top: 1.5rem;
+    border: solid 1px var(--bg-color);
+    border-radius: 1rem;
+    width:275px;
+    /* align-items: center; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.socialMedia h2{
+    text-align: center;
+}
+.media{
+    display: flex;
+    column-gap: .75em;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-bottom: .5em;
+}
+.email, .gitHub, .linkedIn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.2em;
+}
+.email a, .gitHub a, .linkedIn a{
+    color: #fff;
+    border:solid 1px var(--border-color);
+    border-radius: 50%;
+    background-color: var(--border-color);
+    padding:.5em;
+}
+/* .email p, .gitHub p, .linkedIn p{
+    
+} */
 /* .heroBtn{
     margin: 2rem 5em;   
     text-align: center;
@@ -642,7 +684,7 @@ input.contactBtn{
     }
     .heroInner{
         padding-top: 2.5em;
-        row-gap: 4em;
+        row-gap: 2em;
     }
     form { display: block; }
     .slideshow{
