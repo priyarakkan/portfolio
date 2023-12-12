@@ -268,7 +268,7 @@ img{
     align-items: center;
 }
 .socialMedia{
-    background-color: var(--mild-color);
+    background: linear-gradient( var(--nav-color), var(--border-color));
     margin-top: 1.5rem;
     border: solid 1px var(--bg-color);
     border-radius: 1rem;
@@ -280,6 +280,7 @@ img{
 }
 .socialMedia h2{
     text-align: center;
+    color: var(--mild-color);
 }
 .media{
     display: flex;
@@ -302,9 +303,19 @@ img{
     background-color: var(--border-color);
     padding:.5em;
 }
-/* .email p, .gitHub p, .linkedIn p{
-    
-} */
+.email a:hover,
+.gitHub a:hover,
+.linkedIn a:hover{
+    color: var(--highlight-color);
+}
+.email p, .gitHub p, .linkedIn p{
+    color: #fff;
+}
+.email p:hover,
+.gitHub p:hover,
+.linkedIn p:hover{
+    color:var(--highlight-color);
+}
 /* .heroBtn{
     margin: 2rem 5em;   
     text-align: center;
