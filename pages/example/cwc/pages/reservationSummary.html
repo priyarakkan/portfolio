@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Castle Wood Cottages</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellota&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,500&family=El+Messiri:wght@500&family=Macondo&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style1.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="pageName">Reservation Summary</h1>
+   
+    <input type="checkbox" id="navToggler">
+    <nav>
+      <h2>Forecast <br> 30&deg; <span class="material-symbols-outlined">weather_snowy</span></h2>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Cottages</a></li>
+        <li><a  href="reservations.html"><span class="currentPage">Reservations</span></a></li>
+        <li><a href="#">Services</a></li>
+        <!-- <li><a href="#">About Us</a></li>
+        <li><a href="#">Details &amp; Policy</a></li> -->
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">Big Bear Activities</a></li>
+      </ul>
+    </nav>
+    
+    <label for="navToggler" class="navTogglerMenu">
+      <span class="material-icons mi menuOpen">menu</span>
+      <span class="material-icons mi menuClose">close</span>
+    </label>
+   
+    <h2 class="cwcName"><a href="../index.html">Castle Wood Cottages</a></h2>
+    <h3 class="cwcSlogan"><a href="../index.html">Live Your Fairytale</a></h3>  
+  </header>
+  
+  <main>
+      <h2 class="subpageHead">Your Reservation Summary</h2>
+      <form action="mailto:castlewoodcottages@gmail.com" method="post" id="reservationSummary">
+      <fieldset>
+          <legend>Log-In for Booking</legend>
+         
+          <input type="text" name="username" placeholder="User Name *" id="username" value="" required>
+          
+          <input type="password" name="pswd" placeholder="Password *" id="password" value="" required>
+         <input type="submit" id="login" value="Log-In">
+      </fieldset>
+      
+      <fieldset id="guest">
+        <legend>Guest Information</legend>
+      
+        <input type="text" name="country" placeholder="Country/Region *" id="country" value="" required>
+
+        <input type="text" name="firstname" placeholder="First Name *" id="name" value="" required>
+        
+        <input type="text" name="lastname" placeholder="Last Name *" id="name" value="" required>
+
+        <input type="email" name="email" placeholder="E-mail *" id="email" value="" required>
+        
+        <input type="email" name="confirmemail" placeholder="Confirm E-mail *" id="confirmemail" value="" required>
+        
+        <input type="password" name="pswd" maxlength="12" placeholder="New Password *" id="newpassword" value="" required>
+        
+        <input type="password" name="pswd" maxlength="12" placeholder="Confirm Password *" id="confirmpassword" value="" required>
+        
+        <input type="text" name="add1" placeholder="Address Line 1 *" id="name" value="" required>
+        
+        <input type="text" name="add2" placeholder="Address Line 2 " id="name" value="">
+        
+        <input type="text" name="zipcode" placeholder="Zip/Postal Code *" id="zipcode" value="" required>
+        
+        <input type="text" name="city" placeholder="City *" id="city" value="" required>
+        
+        <input type="text" name="state" placeholder="State *" id="state" value="" required>
+        
+        <input type="tel" name="phoneNumber" placeholder="Phone Number *" id="phoneNumber" value="" maxlength="10">
+       
+     </fieldset>
+     <fieldset>
+          <legend>Payment</legend>
+          <h2 id=credit>Credit Card Information</h2>
+          <div class="cbox">
+          <input type="checkbox" name="billing" id="billing" value="billing">
+          <label for="billing">Billing Address is the same as Guest Address</label>
+         </div>
+          <p>Select Credit Card Type *</p>
+          <select name="creditCardType" id="creditCardType" required>    
+                <option value="">Select credit Card Type</option>
+                <option value="garden">AMERICAN EXPRESS</option>
+                <option value="haunted">CARTE BLANCHE</option>
+                <option value="robin">DINERS CLUB</option>
+                <option value="anthony">MASTER CARD</option>
+                <option value="cave">VISA</option>
+                <option value="native">JCB</option>
+            </select>
+            <label for="creditCardNumber">Credit Card Number *</label>
+            <input type="number" name="creditCardNumber"  id="creditCardNumber" value="" maxlength="16">
+            <p>Credit Card Expiration Date *</p>
+            <select name="month" id="month" required>    
+                <option value="">Month</option>
+                <option value="1">Jan</option>
+                <option value="2">Feb</option>
+                <option value="3">Mar</option>
+                <option value="4">Apr</option>
+                <option value="5">May</option>
+                <option value="6">Jun</option>
+                <option value="7">Jul</option>
+                <option value="8">Aug</option>
+                <option value="9">Sep</option>
+                <option value="10">Oct</option>
+                <option value="11">Nov</option>
+                <option value="12">Dec</option>
+            </select> 
+            <select name="year" id="year" required>    
+                <option value="">Year</option>
+                <option value="23">2023</option>
+                <option value="24">2024</option>
+                <option value="25">2025</option>
+                <option value="26">2026</option>
+                <option value="27">2027</option>
+                <option value="28">2028</option>
+                <option value="29">2029</option>
+                <option value="30">2030</option>
+                <option value="31">2031</option>
+                <option value="32">2031</option>
+            </select>           
+            <label for="securityCode">Security Code *</label>
+            <input type="number" name="securityCode"  id="securityCode" value="" maxlength="4">
+            <div class="cbox">
+            <input type="checkbox" name="save" id="save" value="save">
+          <label for="save">Save my credit card to my account</label>
+          </div>
+          <input type="submit" id="makeReservation" value="Make Reservation">
+     </fieldset>
+         
+  </form>
+</main>

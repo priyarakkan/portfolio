@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,500&family=El+Messiri:wght@500&family=Macondo&family=Tangerine:wght@700&display=swap');
+/***********************************
+    ***** Table Of Contents *****
+-----------------------------------
+  1. Global Styles
+  2. Header
+  3. Nav
+  3.5. Nav Toggling
+  4. Forms
+  5. Cottage Descriptions
+  6. Media Queries
+    a. small screen
+    b. medium screen
+    c. large screen
+    d. xl screen
+***********************************/
+
+/**********************
+  1. Global Styles
+***********************/
+html { font-size: 10px }
+body { font: 1.5rem 'EB Garamond', 'Bree Serif', Georgia, serif; 
+        min-height: 100vh;
+}
+main {
+     /* width: 80%; */
+     background-color: #fef0d4;
+      margin: 0 auto;
+      padding:1rem 2rem 2rem;
+      }
+h1 { font-size: 3.2rem; }
+h2 { font-size: 2.4rem; }
+
+h1.cwcName {
+  font: 2.2em Macondo, cursive;
+  color: #503921;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, .7);
+}
+.cwcSlogan {
+  font: 2em Tangerine, cursive;
+  color: white;
+  margin-right: 4.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, .7);
+}
+.cwcName, .cwcSlogan {
+  text-shadow: 0 0 5px rgba(0, 0, 0, .3);
+  margin: 0 3rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.cwcName a:link, .cwcName a:visited, .cwcName a:active { color: #503921 }
+.cwcSlogan a:link, .cwcSlogan a:visited, .cwcSlogan a:active { color: white }
+
+a { text-decoration: none }
+img {
+  max-width: 100%;
+  height: auto;
+}
+/**********************
+  3. Header
+***********************/
+header {
+  background: #B0C8A4 url(../images/whiteCabinSmall.jpg) 50% 65%/cover no-repeat;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  border-bottom: 5px solid #503921;
+}
+.pageName {
+  font: 3em 'El Messiri', 'EB Garamond', Georgia, serif;
+  margin: 0 4rem 0;
+  align-self: center;
+  color: #503921;
+}
+/**********************
+  3. Nav
+***********************/
+nav {
+  font: 1.8rem 'Bree Serif', 'EB Garamond', Georgia, serif;
+  position: absolute;
+  top: 0;
+  background-color: #b0c8a4;
+  width: 100%;
+  display: none;
+}
+nav li .currentPage {
+  color: #2b471f;
+  font-weight: bold;
+}
+nav h2 { display: none }
+nav li {
+  padding: 1rem;
+  border-bottom: 2px solid #2b471f;
+}
+nav li a { display: block; }
+nav li a:link { color: #503921 }
+nav li a:visited { color: #503921; }
+nav li a:hover { 
+  color: #fef0d4;
+  text-shadow: 2px 2px 3px #2b471f;
+}
+/**********************
+  3.5. Nav Toggling
+***********************/
+#navToggler:checked ~ nav { display: block }
+#navToggler {
+  position: absolute;
+  left: -70px;
+}
+.navTogglerMenu {
+  position: absolute;
+  top: .4rem;
+  right: 1rem;
+}
+.mi {
+  color: #503921;
+  font-size: 4rem;
+}
+.menuClose { display: none; }
+#navToggler:checked ~ .navTogglerMenu .menuClose { display: block }
+#navToggler:checked ~ .navTogglerMenu .menuOpen { display: none; }
+/**********************
+  3.5. Main
+***********************/
+body{
+  background-color: #fef0d4;
+  padding-bottom: 1rem;
+}
+/* .home{padding:1rem;} */
+.home img{
+  padding-bottom: 1rem;
+}
+.home p{
+  margin-bottom: 2rem;
+}
+main p{
+  background-color: #EEC1B7;
+  padding: 1em 2em;
+  color: #503921;
+  border-radius: 1em;
+  font-family: 'EB Garamond', serif;
+}
+main img {
+  display: block;
+  /* margin: auto;
+  padding: 0 1em 1em 1em; */
+}
+main h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 0 1em;
+}
+main li{
+  /* text-align: end; */
+  padding-right: 2em;
+}
+/**********************
+  3.5. Sub Pages
+***********************/
+
+.cwcNameSub{
+  font: 1.2em Macondo, cursive;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    text-decoration: none;
+}
+.cwcSloganSub{
+  font: 0.6em Tangerine, cursive;
+  color: #fff;
+  position: absolute;
+  top: 35px;
+  left: 60px;
+}
+/**********************
+ 5.Cottage Descriptions
+***********************/
+/* .amenities h2{
+  text-align: left;
+  padding: auto 0 !important;
+} */
+.amenities h3 {
+  background-color: #eec1b7;
+  border-radius: 2rem;
+  font-size: 1.6em;
+  padding: 0 2rem;
+}
+.amenities li { padding: 1rem 1rem 1rem 3rem; }
+.amenities li, .roomDesc p {font-size: 1.8rem;}
+.amenities p {
+  border-top: 1px solid #503921;
+  margin-top: 1rem;
+  padding: 2rem 0;
+}
+.amenities ul { margin-bottom: 2rem; }
+h1.bigName { font-size: 2.1em; }
+.cottageDesc img {
+  border: 5px solid #2b471f;
+  margin: 1rem auto;
+}
+main h2 {
+  border-bottom: 1px solid #503921;
+  font: 2.5em 'Bree Serif', serif;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+.roomDesc, .roomImages .roomImages {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.roomDesc p {
+  background-color: #eec1b7;
+  border-radius: 2rem;
+  margin: 2rem 0 4rem;
+  padding: 2rem 1rem;
+}
+/**********************
+  3.5. Forms
+***********************/
+main .requiredAsterisk { color: red }
+main form legend {font-size: 1.3em;}
+main form fieldset{
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: #503921 solid 1px;
+  padding-left: 1rem;
+}
+main form label {
+  display: block;
+  margin: 1.5rem 0 .5rem;
+  border-radius: 1rem;
+}
+main form textarea {
+  width: 80%;
+  height: 8rem;
+  resize: none;
+}
+#submit {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 1rem 6rem;
+  font: 2rem 'Bree Serif', 'EB Garamond', Georgia, serif;
+  background-color: #eec1b7;
+  border-color: #503921;
+}
+input, textarea, select { cursor: pointer }
+.contactTitle { 
+  margin: 0rem 2rem 4rem;
+  background-color: #eec1b7;
+  padding: 0 2rem .3rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+/**********************
+  3.5. Services
+***********************/
+#left, #right {
+    width: 10%;
+}
+#left {float: left;}
+#right {
+    float: right;
+    margin-bottom: 2em;
+}
+.serv img {
+    width: 100%;
+    align-items: center;
+    padding-bottom: 0;
+}
+.serv article {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    column-gap: 1em;
+    margin-bottom: 0;
+    
+}
+.serv article p {margin-top: .65em;}
+.quote {
+    background-color: #ffdfa7;
+    box-shadow: 0.25em 0.25em #333; 
+    margin: 1.5em 0.5em;
+    font-size: 2.5rem;
+}
+.serv h2 {
+    background-color: #eec1b7;
+    margin-left: 0; 
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 3rem;
+}
+.price {float: right;
+font-weight: bold; }
+/**********************
+  3.5. Reservation
+***********************/
+.heroReser {background-color: #ffdfa7;
+box-shadow: 0.25em 0.25em #333; }
+.subpageHead {
+    text-align: center;
+    padding-top: 1em;
+    font-size: 2.4rem; 
+    
+    } 
+.cottagesPrice h2 {text-align: center;}
+#calanderBlock fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#checkin, #checkout, #listOfCottage {margin: 1em;}
+.check {margin-top: 1.25em;}
+.cottagesPrice img {width: 100%;}
+.cottagesPrice article {
+    display: grid;
+    border: 2px solid #503921;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    align-items:center;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+.submitSelect {
+    grid-column: span 2;
+    margin: 2rem auto 0;
+    padding: 1rem 6rem;
+    font: 2rem 'Bree Serif', 'EB Garamond', Georgia, serif;
+    background-color: #eec1b7;
+    border-color: #503921;
+    border-radius: 1em;
+}
+/**********************
+  3.5. Big Bear Activity 
+***********************/
+
+main.bbact {display: grid;}
+.bbact section {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+.bbact h2{text-align: center;}
+ul.bbact {
+    flex-direction: column;
+    background-color: #EEC1B7;
+    border-radius: 1em;
+}
+.bbact p{
+    background-color: #EEC1B7;
+    margin: 1rem 0;
+}
+.bbact li {text-align: center;}
+.bbact img {
+    width: 100%;
+    align-items: center;
+}
+/**********************
+  3.5.Reservation Summary 
+***********************/
+
+#username,#password,#guest input {
+    margin: 1rem 10rem 0 8.5rem;
+    width: 50%;
+}
+.cbox {
+    display: flex;
+    align-items: baseline;
+    gap: 1em;
+}
+#login, #makeReservation{
+    margin: 1rem 5rem;
+    padding: 1rem 4rem;
+    font: 2rem 'Bree Serif', 'EB Garamond', Georgia, serif;
+    background-color: #eec1b7;
+    border-color: #503921;
+    border-radius: 1em;  
+}
+#credit {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+/**********************
+  3.5.Footer
+***********************/
+
+ footer{
+  background-color: #B0C8A4;
+  color: #503921;
+  text-align: center;
+ }
+ .fleft h2, .fright h2{
+    text-align: center;
+ }
+ .fleft ul, .fright ul{
+  display: flex;
+  justify-content: center;
+
+
+ }
+ .social a:link{
+  border: solid 1px rgba(80, 57, 33, 0);
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.social a:hover{
+  background-color: #B0C8A4;
+  color: #EEC1B7 ;
+  border-color: #2B471F;
+  }
+.social a:visited{color:  #2B471F;
+  border: solid 1px rgba(80, 57, 33, 0);}
+.fright ul{
+  flex-direction: column;
+  align-items: center;
+}
+.info li{
+  text-align: center;
+}
+/**********************
+  3.5.media queries
+***********************/
+
+@media screen and (min-width: 500px) {
+  nav ul {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    border-bottom: 2px solid #2b471f;
+    align-content: center;
+  }  
+  nav ul li { padding-left: 2rem }
+  nav ul li { border: none }
+  nav ul li:nth-of-type(n-2) { border-bottom: 2px solid #2b471f }
+  /* all but last two*/
+  nav ul li:nth-of-type(even) { padding-right: 4rem }
+  header { background: #B0C8A4 url(../images/whiteCabinMedium.jpg) 50% 65%/cover no-repeat }
+  .contactTitle { font-size: 2em; }
+  legend { font-size: 2em;}
+    /* -- Reservation Summary -- */
+    #login {margin: 1em 35%;}
+    #makeReservation {margin: 1em 35%;}
+}
+
+/* --mid screen-- */
+@media screen and (min-width: 700px) {
+  header {font-size: 1.2em; }
+  nav ul {
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  }
+  nav ul li {border: none; }
+  nav ul li:nth-of-type(n-2) { border: none }
+  nav ul li:nth-of-type(-n+4) { border-bottom: 2px solid #2b471f  }
+  /*above selects only the first four*/
+  .home {   
+    display: flex;
+    column-gap: 2em;
+    padding-top: 1em;
+ }  
+ section.home {
+    max-width: 47%;
+    gap: 3em;
+ }
+  main form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main form fieldset {
+    flex-basis: 50%;
+    border: none;
+  }
+  main form textarea {
+    width: 70%;
+    height: 12rem;
+  }
+  .pageName { align-self: flex-start }
+  #submit {
+    margin-top: 5em;
+    position: relative;
+    bottom: 8rem;
+    margin-left: 40%;
+ }
+ /*-- Service --*/
+  .serv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .extra h2 {
+    background-color: #eec1b7;
+    margin-left: 0;
+  }
+  .quote img {display: inline;}
+  #left {float: left;}   
+  #right {float: right;}
+  .quote {
+    font-size: 3rem;
+    grid-column: span 2;
+    text-align: center;
+  }
+  /* -- Reservation -- */
+  main.serv {padding-top: 0;}
+  .heroReser {margin-bottom: 3rem;}
+  #calanderBlock fieldset {grid-template-columns: repeat(4, 1fr);}
+  #checkin, #checkout, #listOfCottage { margin-left: 7.5em;}
+  .check {margin-top: 1.25em;}
+
+ /* -- Big Bear Activity -- */
+  main.bbact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1em;
+  }    
+ 
+/* -- Reservation Summary -- */
+  #reservationSummary{display: block;}
+  #username,#password,#guest input,#creditCardType,#securityCode,#creditCardNumber {
+    margin: 1em 2em;
+    width:35%;
+  }
+ #month,#year{margin: 1em 2em;}
+}
+
+/* --large screen-- */
+
+@media screen and (min-width: 950px) {
+  header {
+    height: 40rem; /*make sure this is the same as nav top*/
+    font-size: 1.8em;
+    background: #B0C8A4 url(../images/whiteCabinLarge.jpg) 50% 65%/ cover no-repeat;
+  }
+  
+  header label .mi { display: none }
+  nav, nav ul { all: initial }
+  nav {
+    font: 2.2rem 'Bree Serif', 'EB Garamond', Georgia, serif;
+    color: #503921;
+    position: absolute;
+    left: 0;
+    top: 40rem; /*same as height of header*/
+    background-color: #b0c8a4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* nav h2, nav ul {
+    position: sticky;
+    top: 0;
+  } */
+  nav ul {
+    top: 15.6rem /*the total size of the nav h2*/
+  }
+  #navToggler:checked ~ .navTogglerMenu .menuClose { display: none }
+  #navToggler:checked ~ nav { display: flex }
+  /* above fixes bug where if you expand the screen while nav is checked the format is off*/
+  nav h2 {
+    display: block;
+    padding: 3rem 0;
+    margin-bottom: 1rem;
+    border-bottom: solid 1px #2b471f;
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  nav ul li:nth-of-type(n):nth-of-type(-n+4) { border: none }
+  nav ul li:nth-of-type(even) { padding-right: 0 }
+  nav ul li {
+    padding: 0;
+    border: none;
+  }
+  nav ul li a {padding: 1rem 1rem 1rem .5rem; }
+  
+  nav ul li a:link {
+    font: 2.2rem 'Bree Serif', 'EB Garamond', Georgia, serif;
+    color: #503921;
+  }
+  nav ul li a:visited { color: #503921; }
+  nav ul li a:hover { 
+    color: #fef0d4;
+    text-shadow: 2px 2px 3px #2b471f;
+  } 
+  nav ul li a:active { color: #eec1b7 }
+  
+  main { margin-left: 20rem } /*same as sidebar width*/
+  body { background-color: #b0c8a4 }
+    
+/* -- Service -- */
+   .serv {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    #left {
+      float: left; height:40px;
+      width: 40px;}   
+    #right {float: right;
+      height:40px;
+      width: 40px;
+    }
+    .quote {
+      font-size: 3rem;
+      grid-column: span 2;
+      text-align: center;
+    }  
+}
+
+/* --desktop-- */
+
+@media screen and (min-width: 1500px){
+  main { padding: 4rem 0 0 10% }
+  
+}
