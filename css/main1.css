@@ -527,6 +527,16 @@ footer{
 .projectGridContent h2{
     line-height: 1;
 }
+.projectGridContent h3{
+    color: var(--highlight-color);
+    text-decoration: underline;
+}
+.projectGridContent h4{
+    color: var(--nav-color);
+}
+.projectGridContent li{
+    line-height: 1.5em;
+}
 .projectSmallIcons{
     display: block;
     text-align: center;
@@ -717,6 +727,11 @@ input.contactBtn{
         grid-template-columns: 1.5fr 1fr;  
         justify-content: center; 
         align-items: center;
+    }
+    .projectGridContent .subcat{
+        display: flex;
+        flex-direction: row;
+        column-gap: 2.5em;
     }
     .websiteLink{
         grid-column: 1/-1;
