@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Basic Page Needs --> 
+  <title>Nuggets|Elements</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Responsive website -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!--External CSS -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style1.css">
+  <link rel="stylesheet" href="../css/nuggetsStyle.css">
+  <link rel="stylesheet" href="../css/prism.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <i class="fa-solid fa-bars menuIcon"></i>
+        <div class="logo">
+            <a href="../index1.html">Nuggets</a>
+        </div>
+        <div class="navLinks">
+            <i class="fa-solid fa-xmark closeIcon"></i>
+            <ul class="links">
+                <li>
+                    <a href="#">Elements</a>
+                </li>
+                <li>
+                    <a href="components.html">Components</a>
+                </li>
+                <li>
+                    <a href="demo.html">Demo</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="subPage">
+        <h1 class="title">Elements</h1>
+    </header>
+
+    <main class="mainFramework">
+<!--------- Grid ---------->
+        <section class="style" id="stylingGrid">
+            <h3 class="element">Grid System</h3>
+            <section class="sample">
+                <section class="gridSample">
+                    <section class="gridInnerSample">
+                        <h2>Flexbox Grid Layout</h2>
+                        <!-- flexbox grid sample display-->
+                        <div class="container">
+                            <div class="row">
+                                <div class="column col-12">
+                                    <div class="bg-blueDk display-box"> 
+                                        <p class="color-light">col-12 (100%)</p>    
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="column col-9">
+                                  <div class="bg-blueDk display-box">
+                                        <p class="color-light">col-9 (75%)</p>  
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="column col-8">
+                                  <div class="bg-blueDk display-box">
+                                        <p class="color-light">col-8 </p>  
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="column col-6">
+                                    <div class="bg-blueDk display-box">
+                                        <p class="color-light">col-6 (50%)</p>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="column col-4">
+                                  <div class="bg-blueDk display-box">
+                                        <p class="color-light">col-4 </p>  
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="column col-3">
+                                    <div class="bg-blueDk display-box">
+                                        <p class="color-light">col-3 (25%)</p>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="column col-2">
+                                    <div class="bg-blueDk display-box">
+                                        <p class="color-light">col-2</p>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+            <p>The layout includes flexbox based responsive grid system with 12 columns.</p>
+            <p>"Add the " <span class="utility-code color-redDk">.row</span>
+                " class to a container with the " <span class="utility-class color-redDk">.container</span>
+                " class. And add any element you wnt with the " <span class="utility-code color-redDk">.column</span>
+                " class inside the container. These columns will take up the space equally.
+                You can specify the width of each column by adding class "<span class="utility-code color-redDk">col-</span>
+                " folowed by the number 1 trought 12 to indicate a width."
+            </p>
+            <section class="sample">
+                <section class="gridExample1">
+                    <section class="gridInnerExample">
+                        <!-- flexbox grid example -->
+                        <h2>Example 1 - Flexbox</h3>
+                        <div class="container">
+                            <div class="row">
+                                <div class="column col-6 display-box">col-6</div>
+                                <div class="column col-3 display-box">col-3</div>
+                                <div class="column col-2 display-box">col-2</div>
+                                <div class="column col-1 display-box">col-1</div>
+                            </div>
+                            <div class="row">
+                                <div class="column col-4 display-box">col-4</div>
+                                <div class="column col-4 display-box">col-4</div>
+                                <div class="column col-4 display-box">col-4</div>
+                            </div>
+                            <div class="row">
+                                <div class="column col-6 display-box">col-6</div>
+                                <div class="column col-6 display-box">col-6</div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+            <pre>
+                <code class="language-html">
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;------ Example 1a ------&gt;
+        &lt;div class="row"&gt;
+        &lt;div class="column col-6"&gt;col-6&lt;/div&gt;
+        &lt;div class="column col-3"&gt;col-3&lt;/div&gt;
+        &lt;div class="column col-2"&gt;col-2&lt;/div&gt;
+        &lt;div class="column col-1"&gt;col-1&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;----- Example 1b -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-4"&gt;col-6&lt;/div&gt;
+            &lt;div class="column col-4"&gt;col-4&lt;/div&gt;
+            &lt;div class="column col-4"&gt;col-4&lt;/div&gt;
+        &lt;/div&gt;  
+        &lt;----- Example 1c -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-6"&gt;col-6&lt;/div&gt;
+            &lt;div class="column col-6"&gt;col-6&lt;/div&gt;
+        &lt;/div&gt;  
+    &lt;/div&gt;            
+&lt;/body&gt;
+                </code>
+            </pre>
+
+            <h3>Responsive Container</h3>
+            <section class="sample">
+                <section class="gridSample2">
+                    <section class="gridInnerSample">
+                        <h2>Responsive Container</h2>
+                        <!-- Responsive Container sample display -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="column col-10 col-lg-8 col-md-6 col-sm-4">
+                                    <div class="display-box bg-blueDk">
+                                        <div class="color-light">col-10</div>
+                                        <div class="color-light">col-lg-8</div>
+                                        <div class="color-light">col-md-6</div>
+                                        <div class="color-light">col-sm-4</div>
+                                    </div>
+                                </div>
+                                <div class="column col-2 col-lg-4 col-md-6 col-sm-8">
+                                    <div class="display-box bg-blueDk">
+                                        <div class="color-light">col-2</div>
+                                        <div class="color-light">col-lg-4</div>
+                                        <div class="color-light">col-md-6</div>
+                                        <div class="color-light">col-sm-8</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+
+            <p>There are <span class="utility-code color-redDk">col-xs-*, col-sm-*, col-md-*, col-lg-* and col-xl-*</span> 
+                available for flexible grid across mobile, tablet and desktop viewport usage.
+            </p>
+            <ul class="unordered-list display-list">
+                <li> <span class="t-bold">col-xs-*</span> apply to width smaller than 576px. X-Small devices (portrait phones, less than 576px)</li>
+                <li> <span class="t-bold">col-sm-*</span> apply to width smaller than or equal to 767px. Small devices (landscape phones, 576px up to 767px)</li>
+                <li> <span class="t-bold">col-md-*</span> apply to width smaller than or equal to 991px. Medium devices (tablets, 768px up to 991px)</li>
+                <li> <span class="t-bold">col-lg-*</span>  apply to width smaller than or equal to 1199px. Large devices (desktops, 992px up to 1199px)</li>
+                <li> <span class="t-bold">col-xl-*</span>  apply to width smaller than or equal to 1400px X-Large devices (large desktops, 1200px up to 1400).</li>
+                <li><span class="t-bold">col-*</span>  apply to all width, including the width wider than 1400px.</li>
+            </ul>  
+
+            <section class="sample">
+                <section class="gridExample2">
+                    <section class="gridInnerExample2">
+                        <h2>Example 2 - Responsive Container</h3>
+                        <!-- grid example 2 -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="column col-4 col-xs-6 display-box">col-4 col-xs-6</div>
+                                <div class="column col-4 col-xs-3 display-box">col-4 col-xs-3</div>
+                                <div class="column col-4 col-xs-3 display-box">col-4 col-xs-3</div>
+                            </div>
+                            <div class="row">
+                                <div class="column col-4 col-xs-6 col-md-4 display-box">col-4 col-xs-6 col-md-4</div>
+                                <div class="column col-4 col-xs-3 col-md-5 display-box">col-4 col-xs-3 col-md-5</div>
+                                <div class="column col-4 col-xs-3 col-md-3 display-box">col-4 col-xs-3 col-md-3</div>
+                            </div>
+                        </div>  
+                    </section>
+                </section>
+            </section>
+
+
+            <pre>
+                <code class="language-html">
+&lt;body&gt;
+&lt;div class="container"&gt;
+    &lt;----- Example 2a -----&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="column col-4 col-xs-6"&gt;column col-4 col-xs-6&lt;/div&gt;
+        &lt;div class="column col-4 col-xs-3"&gt;column col-4 col-xs-3&lt;/div&gt;  
+        &lt;div class="column col-4 col-xs-3"&gt;column col-4 col-xs-3&lt;/div&gt;
+    &lt;/div&gt;                    
+    &lt;----- Example 2b -----&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="column col-4 col-xs-6 col-md-4"&gt;column col-4 col-xs-6 col-lg-4&lt;/div&gt;
+        &lt;div class="column col-4 col-xs-3 col-md-5"&gt;column col-4 col-xs-3 col-md-5&lt;/div&gt;  
+        &lt;div class="column col-4 col-xs-3 col-md-3"&gt;column col-4 col-xs-3 col-md-3&lt;/div&gt;
+    &lt;/div&gt;            
+&lt;/div&gt;            
+&lt;/body&gt;                    
+                </code>
+            </pre>
+
+            <h3>Column offset </h3>
+            <p>The Flexbox grid provides margin auto utilities to set offset. There are 
+                        <span class="utility-code color-redDk">.col-ml-auto</span>, 
+                        <span class="utility-code color-redDk">.col-mr-auto</span> and 
+                        <span class="utility-code color-redDk">.col-mx-auto</span>
+                to set margins between columns without using empty columns.
+            </p>
+            <ol class="ordered-list display-list">
+                <li><span class="t-bold">.col-ml-auto</span> offsets the left of the column.</li>
+                <li><span class="t-bold">.col-mr-auto</span> offsets the right of the column.</li>
+                <li><span class="t-bold">.col-mx-auto</span> offsets the left and right of the column.</li>
+            </ol>
+
+            <span class="utility-code color-redDk"></span> 
+            <section class="sample">
+                <section class="gridSample3">
+                    <section class="gridInnerSample3">
+                        <!-- <h2>Column Offset</h2> -->
+                        <!-- Grid Offset example -->
+                        <h2>Example 3 - Column offset</h3>
+                        <div class="container">
+                            <div class="row">
+                                <div class="column col-4 col-mr-auto display-box">col-4 col-mr-auto</div>
+                                <div class="column col-2 display-box">col-2</div>
+                            </div>
+                            <div class="row">
+                                <div class="column col-6 col-mx-auto display-box">col-6 col-mx-auto</div>
+                            </div>
+                            <div class="row">
+                                    <div class="column col-6 col-ml-auto display-box">col-6 col-ml-auto</div>
+                            </div>
+                        </div>  
+                    </section>
+                </section>
+            </section>
+            <pre>
+                <code class="language-html">
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;----- Example 3a -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-4 col-mr-auto"&gt;col-4 col-mr-auto&lt;/div&gt;
+            &lt;div class="column col-2"&gt;col-2&lt;/div&gt;
+        &lt;/div&gt; 
+        &lt;----- Example 3b -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-6 col-mx-auto"&gt;col-6 col-mx-auto&lt;/div&gt;
+        &lt;/div&gt; 
+        &lt;----- Example 3c -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-6 col-ml-auto"&gt;col-6 col-ml-auto&lt;/div&gt;
+        &lt;/div&gt; 
+    &lt;/div&gt;            
+&lt;/body&gt;                    
+                </code>
+            </pre>
+        </section>
+
+<!---------- Typography  ----------->
+        <section class="style" id="stylingTyping">
+            <h3 class="element">Typography</h3>
+            <p>Type is all set with the rems, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code>  font-size property.</p>  
+
+            <p><span class="t-bold">Fonts: </span>   
+                        The typography font base by default is 
+                        <a href="https://fonts.google.com/specimen/Outfit?query=outfi">Outfit</a> 
+                        served by Google. The font may be changed to 
+                        <a href="http://www.google.com/fonts/specimen/Source+Sans+Pro">Source Sans Pro</a> 
+                        by applying the class <span class="utility-code color-redDk">.ff-source-sans-pro</span>
+                         to the <code>&lt;html&gt;</code> element(s). 
+                         If you wish to change the default font to Source Sans Pro apply the class 
+                         .ff-source-sans-pro to the <code>&lt;body&gt;</code> 
+                         tag. If you would like to use both fonts interchangeably, apply the class 
+                         <span class="utility-code color-redDk">.ff-poppins</span> or 
+                         <span class="utility-code color-redDk">.ff-source-sans-pro</span> 
+                         to the <code>&lt;html&gt;</code> element(s) you would like to style.
+            </p>
+
+            <p><span class="t-bold">Font Size:</span> 
+                        Quickly change the font-size of text. While our heading classes (e.g., .h1–.h6)  
+            </p>
+    
+            <p><span class="t-bold">Font Weights and Stylings:</span> 
+                        Change the font-weight or font-style of text with the utilities listed below. 
+                        Font-style utilities are prefixed as <span class="utility-code color-redDk"> .text-* </span>
+                        and font-weight utilities are prefixed as <span class="utility-code color-redDk">.font-*</span>.
+            </p>
+    
+            <p> <span class="t-bold">Text-Alignment:</span>  Easily realign text to components with text alignment classes. 
+                        For left, right, and center alignment, responsive classes are available that use the same viewport width breakpoints as the grid system. 
+                        Text-Alignment utilities are prefixed as <span class="utility-code color-redDk">.text-*</span>.
+            </p>
+
+            <p><span class="t-bold">Text-Transform:</span> Transform text in components with text capitalization classes. 
+                        Text-Transform utilities are also prefixed as <span class="utility-code color-redDk">.text-* </span>.
+            </p>
+    
+            <p><span class="t-bold">Letter Spacing:</span> Change the letter spacing with 
+                        <span class="utility-code color-redDk">.letter-spacing-*</span> utilities.
+            </p>
+
+            <section class="sample">
+                <section class="typographySample">
+                    <section class="typographyInnerSample">
+                        <h2>Typography</h2>
+                        <h3>Font Size</h3>
+                        <section class="ff-outfit">  
+                            <p class="ff-outfit fs-1">Source Sans Pro .fs-1 </p>
+                            <p class="ff-outfit fs-2">Source Sans Pro .fs-2</p>
+                            <p class="ff-outfit fs-3">Source Sans Pro .fs-3</p>
+                            <p class="ff-outfit fs-4">Source Sans Pro .fs-4</p>
+                            <p class="ff-outfit fs-5">Source Sans Pro .fs-5</p>
+                            <p class="ff-outfit fs-6">Source Sans Pro .fs-6</p>
+                        </section>
+                                
+                        <h3>Default Text - Poppins</h3>
+                        <section class="ff-poppins">
+                            <p class="ff-poppins fs-1">Poppins .fs-1</p>
+                            <p class="ff-poppins fs-2">Poppins .fs-2</p>
+                            <p class="ff-poppins fs-3">Poppins .fs-3</p>
+                            <p class="ff-poppins fs-4">Poppins .fs-4</p>
+                            <p class="ff-poppins fs-5">Poppins .fs-5</p>
+                            <p class="ff-poppins fs-6">Poppins .fs-6</p>
+                        </section>    
+
+                        <h3>Font Weights</h3>
+                        <section>
+                            <p class="fw-thin fs-4">Font Thin</p>
+                            <p class="fw-lighter fs-4">Font Extra Light</p>
+                            <p class="fw-light fs-4">Font Light</p>
+                            <p class="fw-normal fs-4">Font Normal</p>
+                            <p class="fw-medium fs-4">Font Medium</p>
+                            <p class="fw-semibold fs-4">Font Semibold</p>
+                            <p class="fw-bold fs-4">Font Bold</p>
+                            <p class="fw-extrabold fs-4">Font Extrabold</p>
+                        </section>
+
+                        <h3>Font Stylings</h3>
+                        <section>
+                            <p class="t-bold">Bolded text.</p>
+                            <p class="t-emphasized">Italic text.</p>
+                            <p class="t-underlined">Underlined text.</p>
+                        </section>
+
+
+                        <h3 class="t-underlined">Text alignment</h3>
+                        <section>
+                            <p class="t-left">Start aligned text on all viewport sizes or to the left side.</p>
+                            <p class="t-center">Center aligned text on all viewport sizes.</p>
+                            <p class="t-right">End aligned text on all viewport sizes or to the right side.</p>
+                        </section>    
+
+                        <h3>Text Transform</h3>
+                        <section>
+                            <p class="t-lowercase">Lowercase Text.</p>
+                            <p class="t-uppercase">uppercase text.</p>
+                            <p class="t-capitalize">capitalized text.</p>
+                        </section>
+
+                        <h3>Letter Spacing</h3>
+                        <section>
+                            <p class="letter-spacing-1">Letter Spacing 1</p>
+                            <p class="letter-spacing-2">Letter Spacing 2</p>
+                            <p class="letter-spacing-3">Letter Spacing 3</p>
+                            <p>Normal Letter Spacing</p>
+                        </section>                
+                    </section>
+                </section>
+            </section>
+            <pre>
+                <code class="language-html">
+&lt;body&gt;
+    &lt;-- Font Size  --&gt; 
+    &lt;section&gt;
+        &lt;p class="ff-source-sans-pro fs-1"&gt;Source Sans Pro fs-1&lt;/p&gt;
+        &lt;p class="ff-source-sans-pro fs-2"&gt;Source Sans Pro fs-2&lt;/p&gt;
+        &lt;p class="ff-source-sans-pro fs-3"&gt;Source Sans Pro fs-3&lt;/p&gt;
+        &lt;p class="ff-source-sans-pro fs-4"&gt;Source Sans Pro fs-4&lt;/p&gt;
+        &lt;p class="ff-source-sans-pro fs-5"&gt;Source Sans Pro fs-5&lt;/p&gt;
+        &lt;p class="ff-source-sans-pro fs-6"&gt;Source Sans Pro fs-6&lt;/p&gt;
+    &lt;/section&gt;  
+
+    &lt;-- Default Font Poppins  --&gt;
+    &lt;section&gt;
+        &lt;p class="ff-poppins fs-1"&gt;Poppins Heading fs-1&lt;/p&gt;
+        &lt;p class="ff-poppins fs-2"&gt;Poppins Heading fs-2&lt;/p&gt;
+        &lt;p class="ff-poppins fs-3"&gt;Poppins Heading fs-3&lt;/p&gt;
+        &lt;p class="ff-poppins fs-4"&gt;Poppins Heading fs-4&lt;/p&gt;
+        &lt;p class="ff-poppins fs-5"&gt;Poppins Heading fs-5&lt;/p&gt;
+        &lt;p class="ff-poppins fs-6"&gt;Poppins Heading fs-6&lt;/p&gt;
+    &lt;/section&gt;  
+
+    &lt;-- Font Weights --&gt;
+    &lt;section&gt; 
+        &lt;p class="font-thin fs-4"&gt;Font Thin&lt;/p&gt;                    
+        &lt;p class="font-extralight fs-4"&gt;Font Extra Light&lt;/p&gt;
+        &lt;p class="font-normal fs-4"&gt;Font Normal &lt;/p&gt;
+        &lt;p class="font-medium fs-4"&gt;Font Medium&lt;/p&gt;
+        &lt;p class="font-semibold fs-4"&gt;Font Semibold&lt;/p&gt;
+        &lt;p class="font-bold fs-4"&gt;Font Bold&lt;/p&gt;
+        &lt;p class="font-extrabold fs-4"&gt;Font Extrabold&lt;/p&gt;                                                      
+    &lt;/section&gt;   
+    
+    &lt;-- Font Stylings --&gt;
+    &lt;section&gt; 
+        &lt;p class="text-bolded"&gt;Bolded text.&lt;/p&gt; 
+        &lt;p class="text-emphasized"&gt;Italic text.&lt;/p&gt;
+        &lt;p class="text-underline"&gt;Underlined text.&lt;/p&gt;                          
+    &lt;/section&gt;  
+
+    &lt;-- Text Alignment --&gt;
+    &lt;section&gt;
+        &lt;p class="text-left"&gt;Start aligned text on all viewport sizes or to the left side.&lt;/p&gt; 
+        &lt;p class="text-center"&gt;Center aligned text on all viewport sizes.&lt;/p&gt;
+        &lt;p class="text-right"&gt;End aligned text on all viewport sizes or to the right side.&lt;/p&gt;              
+    &lt;/section&gt; 
+
+    &lt;-- Text Transform --&gt;
+    &lt;section&gt; 
+        &lt;p class="text-lowercase"&gt;Lowercase Text.&lt;/p&gt; 
+        &lt;p class="text-uppercase"&gt;uppercase text.&lt;/p&gt;
+        &lt;p class="text-capitalize"&gt;capitalized text.&lt;/p&gt;
+    &lt;/section&gt; 
+
+    &lt;-- Letter Spacing --&gt;
+    &lt;section&gt;
+        &lt;p class="letter-spacing-1"&gt;Letter Spacing 1&lt;/p&gt; 
+        &lt;p class="letter-spacing-2"&gt;Letter Spacing 2&lt;/p&gt;
+        &lt;p class="letter-spacing-3"&gt;Letter Spacing 3&lt;/p&gt;
+        &lt;p&gt;Normal Letter Spacing 3&lt;/p&gt;                      
+    &lt;/section&gt; 
+
+&lt;/body&gt;
+                </code>
+            </pre>
+        </section>
+
+<!----------------- Buttons ----------------->
+        <section class="style" id="stylingBtn">
+                <h3 class="element">Buttons</h3>
+                <p><em class="brand">For Schools</em> holds several types of buttons which fit with user's needs. 
+                    Their background and text color are based in <em class="brand">For Schools</em> 
+                    framework which you will find in this page:
+                    <a href="#styling-colors" target="_blank">Background Colors</a>,
+                    <a href="#txt-colors" target="_blank">Text Colors</a>.                     
+                </p>
+
+                <br>
+                <p>Shadows and borders display here are customizable.</p>
+
+
+                <section class="sample-btn">
+                    <button type="button" class="nuggets-btn-one bg-redDk color-light">One</button>
+                    <button type="button" class="nuggets-btn-two bg-orangeDk color-light">Two</button>
+                    <button type="button" class="nuggets-btn-three bg-yellowDk color-light">Three</button>
+                    <button type="button" class="nuggets-btn-four bg-greenDk color-light">Four</button>
+                    <button type="button" class="nuggets-btn-five bg-blueDk color-light">Five</button>
+                    <button type="button" class="nuggets-btn-six bg-dark color-light">Six</button>                        
+                </section>
+                    
+
+                <pre>
+                    <code class="language-html">
+&lt;button type="button" class="for-schools-btn-one bg-orange"&gt;One&lt;/button&gt;
+&lt;button type="button" class="for-schools-btn-two bg-red color-white"&gt;Two&lt;/button&gt;
+&lt;button type="button" class="for-schools-btn-three bg-yellow"&gt;Three&lt;/button&gt;
+&lt;button type="button" class="for-schools-btn-four bg-gold"&gt;Four&lt;/button&gt;
+&lt;button type="button" class="for-schools-btn-five bg-blue color-white"&gt;Five&lt;/button&gt;
+&lt;button type="button" class="for-schools-btn-six bg-accent"&gt;Six&lt;/button&gt;                                                 
+                    </code>
+                </pre>                  
+        </section>
+
+<!----------------- Colors ----------------->
+        <section class="style" id="stylingColors">
+                <h3 class="element">Colors</h3>
+                <p>Colors are more intuitive! We have a class of colors that are in dark and
+                    light and sutable for restaurants theme that want bright and natural colors.</p>  
+                <p>Our color palette is dark and light colors used by adding a class of the color name: 
+                    .blue, .green, .red, .orange, and .yellow. Background color is added with the class 
+                    .color-bg, for example: .blue-bg. Border is added with the class .color-bc,
+                    for example: .blue-bc.
+                </p>
+
+                <h3>Background/ Text Colors</h3>
+                <section class="sample">
+                    <section class="bgColorSample">
+                        <section class="bgColorInnerSample">
+                            <h2 id="stylingColors">Background Colors</h2>
+                            <section class="bgColors gridContainer">
+                                <div class="bg-redLt"><p class="color-light t-center">.bg-redLt</p></div>
+                                <div class="bg-redDk"><p class="color-light t-center">.bg-redDk</p></div>
+                                <div class="bg-orangeLt"><p class="color-light t-center">.bg-orangeLt</p></div>
+                                <div class="bg-orangeDk"><p class="color-light t-center">.bg-orangeDk</p></div>  
+                                <div class="bg-yellowLt"><p class="color-light t-center">.bg-yellowLt</p> </div>
+                                <div class="bg-yellowDk .col-4"><p class="color-light t-center">.bg-yellowDk</p> </div>
+                                <div class="bg-greenLt"><p class="color-light t-center">.bg-greenLt</p></div>
+                                <div class="bg-greenDk"><p class="color-light t-center">.bg-greenDk</p></div>
+                                <div class="bg-blueLt"><p class="color-light t-center">.bg-blueLt</p></div>
+                                <div class="bg-blueDk"><p class="color-light t-center">.bg-blueDk</p></div>  
+                                <div class="bg-light"><p class="color-dark t-center">.bg-light</p></div>  
+                                <div class="bg-dark"><p class="color-light t-center">.bg-dark</p> </div>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <p>To utilize the background color utilities add the class <span class="display-code color-pink">.bg-* </span> and the specified color.</p>
+                <pre>
+                    <code class="language-html">
+&lt;body&gt;
+    &lt;-- Background Colors --&gt;
+    &lt;/section&gt; 
+        &lt;div class="bg-black"&gt;.bg-black&lt;/div&gt;
+        &lt;div class="bg-dark"&gt;.bg-dark&lt;/div&gt;
+        &lt;div class="bg-grey"&gt;.bg-grey&lt;/div&gt;
+        &lt;div class="bg-blue"&gt;.bg-blue&lt;/div&gt;
+        &lt;div class="bg-purple"&gt;.bg-purple&lt;/div&gt;
+        &lt;div class="bg-pink"&gt;.bg-pink&lt;/div&gt;
+        &lt;div class="bg-red"&gt;.bg-red&lt;/div&gt;
+        &lt;div class="bg-orange"&gt;.bg-orange&lt;/div&gt;
+        &lt;div class="bg-yellow"&gt;.bg-yellow&lt;/div&gt;
+        &lt;div class="bg-gold"&gt;.bg-gold&lt;/div&gt;
+        &lt;div class="bg-teal"&gt;.bg-teal&lt;/div&gt;
+        &lt;div class="bg-green"&gt;.bg-green&lt;/div&gt;
+        &lt;div class="bg-accent"&gt;.bg-accent&lt;/div&gt;
+        &lt;div class="bg-white"&gt;.bg-white&lt;/div&gt;
+    &lt;/section&gt;    
+&lt;/body&gt;
+                    </code>
+                </pre> 
+                      
+
+<!-- Text Colors  -->
+                <section class="sample">
+                    <section class="text-color-sample">
+                        <section class="text-color-inner-sample">
+                            <h2 id="txt-colors">Text Colors</h2>
+                            <section class="colors">
+                                <p class="color-redLt t-center br-redLt">.color-redLt</p>
+                                <p class="color-redDk t-center br-redDk">.color-redDk</p>
+                                <p class="color-orangeLt t-center br-orangeLt">.color-orangeLt</p>
+                                <p class="color-orangeDk t-center br-orangeDk">.color-orangeDk</p>
+                                <p class="color-yellowLt t-center br-yellowLt">.color-yellowLt</p>
+                                <p class="color-yellowDk t-center br-yellowDk">.color-yellowDk</p>
+                                <p class="color-greenLt t-center br-greenLt">.color-greenLt</p>
+                                <p class="color-greenDk t-center br-greenDk">.color-greenDk</p>
+                                <p class="color-blueLt t-center br-blueLt">.color-blueLt</p>
+                                <p class="color-blueDk t-center br-blueDk">.color-blueDk</p>
+                                <p class="color-light bg-dark t-center br-light">.color-light</p>
+                                <p class="color-dark t-center br-dark">.color-dark</p>                                  
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <p>To utilize the text color utilities add the class <span class="display-code color-pink">.color-*</span> and the specified color, as specified below.</p>
+                <pre>
+                    <code class="language-html">
+&lt;body&gt;
+    &lt;-- Text Colors --&gt;
+    &lt;/section&gt; 
+        &lt;p class="color-black"&gt;.color-black&lt;/p&gt;
+        &lt;p class="color-dark"&gt;.color-dark&lt;/p&gt;
+        &lt;p class="color-grey"&gt;.color-grey&lt;/p&gt;
+        &lt;p class="color-blue"&gt;.color-blue&lt;/p&gt;
+        &lt;p class="color-purple"&gt;.color-purple&lt;/p&gt;
+        &lt;p class="color-pink"&gt;.color-pink&lt;/p&gt;
+        &lt;p class="color-red"&gt;.color-red&lt;/p&gt;
+        &lt;p class="color-orange"&gt;.color-orange&lt;/p&gt;
+        &lt;p class="color-yellow"&gt;.color-yellow&lt;/p&gt;
+        &lt;p class="color-gold"&gt;<div class="color-gold"></div>&lt;/p&gt;
+        &lt;p class="color-teal"&gt;.color-teal&lt;/p&gt;
+        &lt;p class="color-green"&gt;.color-green&lt;/p&gt;
+        &lt;p class="color-accent"&gt;.color-accent&lt;/p&gt;
+        &lt;p class="color-white bg-black"&gt;.color-white&lt;/p&gt;
+    &lt;/section&gt;    
+&lt;/body&gt;
+                    </code>
+                </pre>
+        </section>
+
+<!----------------- Border Radius ----------------->
+
+
+
+
+<!----------------- Icons ----------------->
+
+<!----------------- Icons with Text ----------------->
+
+<!----------------- Images ----------------->  
+
+           
+        </section>
+        
+    </main>
+    </body>
+    </html>

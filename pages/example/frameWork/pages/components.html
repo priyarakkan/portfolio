@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Basic Page Needs --> 
+  <title>Nuggets|Components</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Responsive website -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!--External CSS -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style1.css">
+  <link rel="stylesheet" href="../css/nuggetsStyle.css">
+  <link rel="stylesheet" href="../css/prism.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <i class="fa-solid fa-bars menuIcon"></i>
+        <div class="logo">
+            <a href="../index1.html">Nuggets</a>
+        </div>
+        <div class="navLinks">
+            <i class="fa-solid fa-xmark closeIcon"></i>
+            <ul class="links">
+                <li>
+                    <a href="elements.html">Elements</a>
+                </li>
+                <li>
+                    <a href="#">Components</a>
+                </li>
+                <li>
+                    <a href="demo.html">Demo</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="subPage">
+        <h1 class="title">Components</h1>
+    </header>
+
+    <main class="mainFramework">
+
+<!----------------- Nav ----------------->
+        <section class="" id="compNav">
+            <h3>CSS Component:Navigation</h3>
+            <p>It is made up by brand logo and menu items. Brand logo can be svg, png, or text file.</p> 
+                    
+            <section class="sample">
+                <header class="headerSample">
+                    <nav>
+                        <div class="sampleNavbar">
+                            <i class="fa-solid fa-bars menuIcon"></i>
+                            <div class="sampleLogo">
+                                <a href="#">LOGO</a>
+                            </div>
+                            <div class="sampleNavLinks">
+                                <div class="sampleLogo">
+                                    <span class="sampleLogoName"></span>
+                                    <i class="fa-solid fa-xmark closeIcon"></i>
+                                </div>
+                                <ul class="menuSample">
+                                    <li>
+                                        <a href="#">Item 01</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Item 02</a>
+                                        <i class="fa-solid fa-caret-down arrowIcon"></i>
+                                        <ul class="subMenu">
+                                            <li><a href="#">Sub Item 01</a></li>
+                                            <li><a href="#">Sub Item 02</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Item 03</a>
+                                    </li>
+                                </ul>
+                            </div>  
+                        </div>  
+                    </nav>
+                </header>                  
+            </section>
+
+            <pre>
+                <code class="laguage-html">
+&lt;body class="restaurantFrameworkNav" &gt;
+    &lt;header class="restaurantFrameworkHeader"&gt;
+        &lt;nav&gt;
+            &lt;div class="sampleNavbar"&gt;
+                &lt;i class="fa-solid fa-bars menuIcon"&gt;&lt;/i&gt;
+                &lt;div class="sampleLogo"&gt;
+                &lt;a href="#"&gt;LOGO&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="sampleNavLinks"&gt;
+                &lt;div class="sampleLogo"&gt;
+                    &lt;span class="sampleLogoName"&gt;&lt;/span&gt;
+                    &lt;i class="fa-solid fa-xmark closeIcon"&gt;&lt;/i&gt;
+                &lt;/div>&gt;
+                &lt;ul class="menuSample"&gt;
+                    &lt;li&gt;
+                        &lt;a href="#"&gt;Item 01&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="#"&gt;Item 02&lt;/a&gt;
+                        &lt;i class="fa-solid fa-caret-down arrowIcon"&gt;&lt;/i&gt;
+                        &lt;ul class="subMenu"&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Sub Item 01&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Sub Item 02&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="#"&gt;Item 03&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;  
+        &lt;/div&gt;  
+    &lt;/nav&gt;
+&lt;/header&gt;
+
+                </code>
+            </pre>
+        </section>
+
+<!----------------- Cards ----------------->
+        <section class="" id="compCards">
+            <h3>CSS Component:Cards</h3>
+            <p>
+            </p>
+
+            <section class="sample">
+                <div class="sampleMenu">
+                    <div class="sampleMenuImg">
+                        <img src="../images/p7.jpg" alt="">
+                    </div>
+                    <h3>Item Name</h3>
+                    <div class="price">Price - $$</div>
+                </div>                          
+            </section>
+
+            <pre>
+                <code class="laguage-html">
+&lt;section class="sample"&gt;
+    &lt;div class="sampleMenu"&gt;
+        &lt;div class="sampleMenuImg"&gt;
+            &lt;img src="../images/p7.jpg" alt=""&gt;
+        &lt;/div&gt;
+        &lt;h3&gt;Item Name&lt;/h3&gt;
+        &lt;div class="price"&gt;Price - $$&lt;/div&gt;
+    &lt;/div&gt;                          
+&lt;/section&gt;
+
+               
+
+                </code>
+            </pre>
+        </section>
+
+<!----------------- Modal Pop-up ----------------->
+        <section class="" id="compModelPopup">
+            <h3>CSS Component:Modal Pop-up</h3>
+            <p>
+
+            </p> 
+
+            <section class="sample">
+                <div class="modal">
+                    <div class="popup" id="popup">
+                        <section id="orderPopup">
+                            <h3>Your order:</h3>
+                            <ul id="orderSummary" class="listNoStyle textRight">
+                          
+                            </ul>
+                            <p id="orderTotal">Your total is </p>
+                        </section>
+                        <button type="button" onclick="closePopup()" class="closeModal">Continue to Payment</button>
+                    </div>
+                </div>                 
+            </section>
+
+            <pre>
+                <code class="language-html">
+&lt;section class="sample"&gt;
+    &lt;div class="modal"&gt;
+        &lt;div class="popup" id="popup"&gt;
+            &lt;section id="orderPopup"&gt;
+                &lt;h3&gt;Your order:&lt;/h3&gt;
+                &lt;ul id="orderSummary" class="listNoStyle textRight"&gt;               
+                &lt;/ul&gt;
+                &lt;p id="orderTotal">Your total is &lt;/p&gt;
+            &lt;/section&gt;
+            &lt;button type="button" onclick="closePopup()" class="closeModal">Continue to Payment&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;                 
+&lt;/section&gt;
+
+                </code>
+            </pre>
+        </section>
+
+<!----------------- Hero Component ----------------->
+        <section class="" id="compHerocomp">
+            <h3>CSS Component:Hero Component</h3>
+            <p>
+
+            </p> 
+
+            <section class="sample">
+                 
+            </section>
+
+            <pre>
+                <code class="language-html">
+
+                </code>
+            </pre>
+        </section>
+
+<!----------------- Carousel ----------------->
+        <section class="" id="compCarousel">
+            <h3>JS Component:Carousel</h3>
+            <p></p> 
+            
+            <section class="sample">
+                <section class="carousel">
+                    <button class="carouselBtn leftBtn isHidden">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                    </button>            
+                    <div class="carouselContainer">
+                        <ul class="carouselItems">
+                            <li class="carouselSlide currentSlide">
+                                <h2>Headline 1</h2>
+                                <img src="images/01.jpg" alt="image description">
+                            </li>
+                            <li class="carouselSlide">
+                                <h2>Headline 2</h2>
+                                <img src="images/02.jpg" alt="image description">
+                            </li>
+                            <li class="carouselSlide">
+                                <h2>Headline 3</h2>
+                                <img src="images/03.jpg" alt="image description">
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="carouselBtn rightBtn">
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </button>
+                </section>                                 
+            </section>
+
+            <pre>
+                <code class="language-html">
+&lt;section class="sample"&gt;
+    &lt;section class="carousel"&gt;
+        &lt;button class="carouselBtn leftBtn isHidden"&gt;
+            &lt;i class="fa-solid fa-circle-arrow-left"&gt;&lt;/i&gt;
+        &lt;/button&gt;           
+        &lt;div class="carouselContainer"&gt;
+            &lt;ul class="carouselItems"&gt;
+                &lt;li class="carouselSlide currentSlide"&gt;
+                    &lt;h2&gt;Headline 1&lt;/h2&gt;
+                    &lt;img src="images/01.jpg" alt="image description"&gt;
+                &lt;/li&gt;
+                &lt;li class="carouselSlide"&gt;
+                    &lt;h2&gt;Headline 2&lt;/h2&gt;
+                    &lt;img src="images/02.jpg" alt="image description"&gt;
+                &lt;/li&gt;
+                &lt;li class="carouselSlide"&gt;
+                    &lt;h2&gt;Headline 3&lt;/h2&gt;
+                    &lt;img src="images/03.jpg" alt="image description"&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;button class="carouselBtn rightBtn"&gt;
+            &lt;i class="fa-solid fa-circle-arrow-right"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+    &lt;/section&gt;                                 
+&lt;/section&gt;
+
+                </code>
+            </pre>
+        </section>
+
+<!----------------- Order App ----------------->
+        <section class="" id="compOrder">
+            <h3>JS Component:Order App</h3>
+            <p></p> 
+    
+            <section class="sample">
+                         
+            </section>
+
+            <pre>
+                <code class="language-html">
+
+                </code>
+            </pre>
+        </section>
+
+
+    </main>
+    <script src="../script/resteurantFramework.js"></script>
+</body>
+</html>
