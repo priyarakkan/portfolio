@@ -1,5 +1,22 @@
 // ----------------- Navigation -----------------//
+const menuBtn = document.querySelector('.sampleMenuIcon');
+const closeBtn = document.querySelector('.sampleCloseIcon')
+const navLinks = document.querySelector('.sampleNavLinks')
 
+menuBtn.addEventListener('click',() =>{
+    navLinks.style.left = '0';
+
+});
+closeBtn.addEventListener('click',() => {
+    navLinks.style.left = '-100%';
+})
+
+const submenuIcon = document.querySelector('.sampleArrowIcon');
+submenuIcon.addEventListener('click', () =>{
+    navLinks.classList.toggle('show1');
+})
+
+ 
 
 
 

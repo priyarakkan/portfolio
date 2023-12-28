@@ -588,3 +588,133 @@ blockquote p:last-child{margin-bottom: 0;}
     cursor: pointer;
   }
 
+  /*--------- Navigation --------------*/
+  .sampleNav{
+    position:absolute;
+    top:350px;left:0;
+    width:100%;
+    height:4.5rem;
+    background-color:var(--yellowDk);
+    box-shadow:0 2px 8px var(--yellowDk);
+    z-index:99
+}
+.sampleNavbar{
+    max-width:1200px;
+    height:100%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 2rem
+}
+.sampleSidebarLogo a{
+    color:var(--yellowLt);
+    font-size:2rem
+}
+.sampleNavLinks{
+    height:100%;
+    line-height:70px
+}
+.sampleLinks{display:flex}
+.sampleLinks li{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 .75rem
+}
+.sampleLinks li a{
+    color:var(--yellowLt);
+    height:100%;
+    white-space:nowrap
+}
+.sampleArrowIcon{
+    line-height:70px;
+    height:100%;
+    text-align:center;
+    color:var(--yellowLt);
+    display:inline-block;
+    transition:all .3s ease
+}
+.sampleArrowIcon{
+    transform:rotate(180deg)
+}
+.sampleSubMenu{
+    position:absolute;
+    top:50px;left:0;
+    background-color:var(--yellowDk);
+    line-height:40px;
+    border-radius:0 0 4px 4px;
+    box-shadow:0 2px 8px var(--yellowDk);
+    display:none;z-index:2
+}
+.sampleSubMenu li{
+    padding:0 .75rem;
+    border-bottom:1px solid var(--yellowLt)
+}
+.sampleSubMenu a{color:var(--yellowLt)}
+li:hover .sampleSubMenu{
+    display:block
+}
+.sampleMenuIcon,
+.sampleLogoName,
+.sampleCloseIcon{display:none}
+
+@media screen and (max-width:576px){
+    .sampleMenuIcon{display:block}
+    .sampleNavLinks{
+        display:block;
+        position:absolute;
+        top: 380px;
+        left:-100%;
+        max-width:270px;
+        width:100%;
+        background-color:var(--yellowDk);
+        line-height:40px;
+        padding:1.5rem;
+        transition:all .5s ease;
+        z-index:1000
+    }
+    .sampleNav{
+        position:absolute;
+        top:375px;
+    }
+    .sampleSidebarLogo{
+        display:flex;
+        align-items:center;
+        justify-content:space-between
+    }
+    .sampleMenuIcon,
+    .sampleLogoName,
+    .sampleCloseIcon{
+        color:var(--yellowLt);
+        font-size:2rem
+    }
+    .sampleMenuIcon,
+    .sampleLogoName,
+    .sampleCloseIcon{display:block}
+    .sampleLinks{
+    display:block;
+    margin-top:1.5rem
+    }
+    .sampleLinks li{display:block}
+    .sampleSubMenu{
+    display:none;
+    position:relative;
+    top:0;
+    left:2rem;
+    box-shadow:none
+    }
+    .sampleSubMenu li{
+    border-bottom:none
+    }
+    .sampleArrowIcon{
+    transform:rotate(0deg)
+    }
+    .sampleSubMenu{
+    display:block
+    }
+    .sampleArrowIcon{
+    transform:rotate(180deg)
+    }
+}
