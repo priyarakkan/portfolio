@@ -665,13 +665,13 @@ li:hover .sampleSubMenu{
     .sampleNavLinks{
         display:block;
         position:absolute;
-        top: 380px;
+        top: 0px;
         left:-100%;
         max-width:270px;
         width:100%;
         background-color:var(--yellowDk);
         line-height:40px;
-        padding:1.5rem;
+        padding:1.5rem 0;
         transition:all .5s ease;
         z-index:1000
     }
@@ -695,14 +695,15 @@ li:hover .sampleSubMenu{
     .sampleCloseIcon{display:block}
     .sampleLinks{
     display:block;
-    margin-top:1.5rem
+    margin-top:1rem;
+    background-color: #695611;
     }
     .sampleLinks li{display:block}
     .sampleSubMenu{
     display:none;
     position:relative;
     top:0;
-    left:2rem;
+    left:.75rem;
     box-shadow:none
     }
     .sampleSubMenu li{
@@ -730,12 +731,198 @@ li:hover .sampleSubMenu{
 
 }
 
-/*--------- Modal Pop-up --------------*/
-
-
-/*--------- Hero Component --------------*/
-
 /*--------- Carousel --------------*/
-
+.carousel {
+    height: min(450px, 61vw);
+    padding-bottom: 3em;
+    max-width: 1000px;
+  }
+  .carouselSlide {
+    background-color: transparent;
+  }
+  .carousel {
+    max-width: calc(100% - 80px);
+    margin: 0 auto;
+    position: relative;
+}
+.carouselContainer {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.carouselItems {
+    list-style-type: none;
+    height: 100%;
+    position: relative;
+    transition: transform .5s ease-in-out;
+}
+.carouselSlide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.1);
+}
+.carouselLeftBtn, .carouselRightBtn {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: rgb(150,150,150);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+.carouselLeftBtn { left: -40px; }
+.carouselRightBtn { right: -40px; }
+.carouselNav {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+    position: relative;
+    bottom: 0;
+}
+.carouselIndicator {
+    background-color: rgb(150,150,150);
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color .5s;
+    padding: 0;
+}
+.carouselIndicator.currentSlide {
+  background-color: rgba(0,0,0,.15);
+}
+.isHidden {
+  display: none;
+}
 
 /*--------- Order App --------------*/
+form {
+    padding: 0;
+    max-width: 1000px;
+  }
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 .5em;
+  }
+  label:nth-child(even) {
+    background-color: rgba(255,255,255,.1);
+  }
+  .pageTitle {
+    padding: 1em;
+  }
+  .itemName {
+    flex-grow: 1;
+  }
+  .carouselSlide {
+    background-color: transparent;
+  }
+  #orderPopup>h3, #orderPopup li, #orderTotal {
+    padding: 1em;
+  }
+  #orderUp {
+    width: min(50vw, 300px);
+    margin: 1em auto;
+    display: block;
+  }
+  #popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .order form{
+    width:75%;
+    border-radius:1rem;
+    box-shadow:0 2px 8px var(--yellowDk);
+    border:.1rem solid var(--yellowDk);
+    padding:1.5rem;
+    margin:0 auto;
+    height:100%;
+}
+.order form .inputBox{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.order form .inputBox .inputs{
+    display:flex;
+    flex-direction:column;
+    padding-bottom:1rem;
+}
+.order form .inputBox .inputs input,.order form .inputBox .inputs textarea{
+    background-color:var(--yellowLt);
+    border-radius:.17rem;
+    color:var(--yellowDk);
+}
+.btn{
+    cursor:pointer;
+    margin:1rem 38%;
+    border:2px solid var(--yellowDk);
+    border-radius:4px;
+    color:var(--yellowDk);
+    font-weight:700;
+    background-color:var(--yellowLt);
+}
+/*modal window
+* format to make: div.modal>button.modalBtn[onclick="openPopup()"]+div#popup.popup>button[onclick="closePopup()"]
+*/
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+  }
+  .popup {
+    width: 275px;
+    background: var(--primaryLt);
+    border-radius: 1rem;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    height: 400px;
+    transform: translate(-50%, -50%) scale(.1);
+    text-align: center;
+    padding: 0 2rem 2rem;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+  }
+  .open-popup .popup {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 15;
+  }
+  .open-popup, .open-popup .popup {
+    visibility: visible;
+  }
+  @media screen and (min-width: 600px){
+    .popup {
+      width: 400px; }
+  }
+
+  @media screen and (min-width: 800px) {
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    label:nth-child(even) {
+      background-color: transparent;
+    }
+    label:nth-child(3n), label:nth-child(5n-3){
+      background-color: rgba(255,255,255,.1);
+    }
+   #orderUp {
+      grid-column: span 2;
+      align-self: center;
+    }
+  }

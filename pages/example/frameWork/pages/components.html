@@ -203,29 +203,33 @@
             
             <section class="sample">
                 <section class="carousel">
-                    <button class="carouselBtn leftBtn isHidden">
-                        <i class="fa-solid fa-circle-arrow-left"></i>
-                    </button>            
-                    <div class="carouselContainer">
-                        <ul class="carouselItems">
-                            <li class="carouselSlide currentSlide">
-                                <h2>Headline 1</h2>
-                                <img src="../images/01.jpg" alt="image description">
-                            </li>
-                            <li class="carouselSlide">
-                                <h2>Headline 2</h2>
-                                <img src="../images/02.jpg" alt="image description">
-                            </li>
-                            <li class="carouselSlide">
-                                <h2>Headline 3</h2>
-                                <img src="../images/03.jpg" alt="image description">
-                            </li>
-                        </ul>
-                    </div>
-                    <button class="carouselBtn rightBtn">
-                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    <button class="carouselLeftBtn isHidden">
+                      <i class="fa-solid fa-arrow-left"></i>
                     </button>
-                </section>                                 
+                    <div class="carouselContainer">
+                      <ul class="carouselItems">
+                        <li class="carouselSlide currentSlide">
+                          <img src="../images/01.jpg" alt="" class="center">
+                        </li>
+                        <li class="carouselSlide">
+                          <img src="../images/02.jpg" alt="" class="center">
+                        </li>
+                        <li class="carouselSlide">
+                          <img src="../images/03.jpg" alt="" class="center">
+                        </li>
+                      </ul>
+                    </div>
+                    <button class="carouselRightBtn">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <nav class="carouselNav">
+                      <button class="carouselIndicator currentSlide"></button>
+                      <button class="carouselIndicator"></button>
+                      <button class="carouselIndicator"></button>
+                      <button class="carouselIndicator"></button>
+                      <button class="carouselIndicator"></button>
+                    </nav>
+                  </section>                                 
             </section>
 
             <pre>
@@ -267,6 +271,54 @@
             <p></p> 
     
             <section class="sample">
+                <form action="" method="get" class="bg-blueDk br-sm">
+                    <label for="eggsBenedict">
+                      <span class="itemName">Eggs Benedict </span><span class="itemPrice">22.68</span>
+                      <input type="button" class="addItemButton" id="eggsBenedict" value="+ Add">
+                    </label>
+                    <label for="morningLobster">
+                      <span class="itemName">Morning Lobster </span><span class="itemPrice">35.92</span>
+                      <input type="button" class="addItemButton" id="morningLobster" value="+ Add">
+                    </label>
+                    <label for="machakaBurrito">
+                      <span class="itemName">Machaka Burrito </span><span class="itemPrice">25.50</span>
+                      <input type="button" class="addItemButton" id="machakaBurrito" value="+ Add">
+                    </label>
+                    <label for="largePancake">
+                      <span class="itemName">One Large Pancake </span><span class="itemPrice">18.00</span>
+                      <input type="button" class="addItemButton" id="largePancake" value="+ Add">
+                    </label>
+                    <label for="nyBagel">
+                      <span class="itemName">New York Bagel </span><span class="itemPrice">19.45</span>
+                      <input type="button" class="addItemButton" id="nyBagel" value="+ Add">
+                    </label>
+                    <label for="morningLobster">
+                      <span class="itemName">Avocado Toast</span><span class="itemPrice">172.99</span>
+                      <input type="button" class="addItemButton" id="morningLobster" value="+ Add">
+                    </label>
+                    <label for="coffee">
+                      <span class="itemName">Coffee </span><span class="itemPrice">2.50</span>
+                      <input type="button" class="addItemButton" id="coffee" value="+ Add">
+                    </label>
+                    <label for="latte">
+                      <span class="itemName">~Coffee~ <i class="iconDairy"></i></span><span class="itemPrice">6.25</span>
+                      <input type="button" class="addItemButton" id="latte" value="+ Add">
+                    </label>
+                  
+                    <input onclick="openPopup()" id="orderUp" type="submit" value="Submit Order">
+                    <div class="modal">
+                      <div class="popup" id="popup">
+                        <section id="orderPopup">
+                          <h3>Your order:</h3>
+                            <ul id="orderSummary" class="listNoStyle textRight">
+                            
+                            </ul>
+                          <p id="orderTotal">Your total is </p>
+                        </section>
+                        <button type="button" onclick="closePopup()" class="closeModal">Continue to Payment</button>
+                      </div>
+                    </div>
+                  </form>
                          
             </section>
 
