@@ -1,32 +1,22 @@
 // ----------------- Navigation -----------------//
-const menuBtn = document.querySelector('.sampleMenuIcon');
-const closeBtn = document.querySelector('.sampleCloseIcon')
-const navLinks = document.querySelector('.sampleNavLinks')
+const menuBtn1 = document.querySelector('.sampleMenuIcon');
+const closeBtn1 = document.querySelector('.sampleCloseIcon')
+const navLinks1 = document.querySelector('.sampleNavLinks')
 
-menuBtn.addEventListener('click',() =>{
-    navLinks.style.left = '0';
+menuBtn1.addEventListener('click',() =>{
+    navLinks1.style.left = '0';
 
 });
-closeBtn.addEventListener('click',() => {
-    navLinks.style.left = '-100%';
+closeBtn1.addEventListener('click',() => {
+    navLinks1.style.left = '-100%';
 })
 
 const submenuIcon = document.querySelector('.sampleArrowIcon');
 submenuIcon.addEventListener('click', () =>{
-    navLinks.classList.toggle('show1');
+    navLinks1.classList.toggle('show1');
 })
 
  
-
-
-
-
-
-
-
-
-
-
 
 // ----------------- Carousel -----------------//
 const slideWrapper = document.querySelector('.carouselItems');

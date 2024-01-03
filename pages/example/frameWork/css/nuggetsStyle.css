@@ -534,7 +534,7 @@ blockquote p:last-child{margin-bottom: 0;}
 /* Custom Styling  */
 .display-box{margin-top: 15px; padding: 4px; border-radius: 4px; place-items: center;border: 1px solid var(--blueLt);}
 .display-list         {margin: 5px 0 5px 8px;}
-.element{border-bottom: dashed 1px var(--blueDk);}
+.element,.component{border-bottom: dashed 1px var(--blueDk);}
 
 
 /* ------------------------------------------ Buttons ------------------------------------------*/
@@ -544,37 +544,37 @@ blockquote p:last-child{margin-bottom: 0;}
     padding: .25em 1em;
     border-radius: 1em;
     cursor: pointer;
-  }
+}
   
-  .nuggets-btn-two{
+.nuggets-btn-two{
     border: none;
     padding: .25em 1em;
     box-shadow: 5px 5px 3px rgba(123, 123, 123, .5);
     cursor: pointer;  
-  }
+}
   
-  .nuggets-btn-three{
+.nuggets-btn-three{
     border: none;
     padding: .25em 1em;
     box-shadow: 4px 4px 0 hsl(231 77% 50%);
     cursor: pointer;
-  }
+}
   
-  .nuggets-btn-four{
+.nuggets-btn-four{
     border: solid 2px hsl(46 65% 32%);  
     padding: .25em 1em;
     border-radius: .25em;
     cursor: pointer;
-  }
+}
   
-  .nuggets-btn-five{
+.nuggets-btn-five{
     border: none;
     padding: .25em 1em;
     border-radius: 1em 0 1em;
     cursor: pointer;
-  }
-  
-  .nuggets-btn-six{
+}
+ 
+.nuggets-btn-six{
     border: solid 3px hsl(231 77% 30%);  
     padding: 1em;
     border-radius: 50%;
@@ -586,10 +586,10 @@ blockquote p:last-child{margin-bottom: 0;}
     align-items: center;
     justify-content: center;
     cursor: pointer;
-  }
+}
 
   /*--------- Navigation --------------*/
-  .sampleNav{
+.sampleNav{
     position:absolute;
     top:350px;left:0;
     width:100%;
@@ -718,3 +718,24 @@ li:hover .sampleSubMenu{
     transform:rotate(180deg)
     }
 }
+
+/*--------- Cards --------------*/
+.sampleMenu{
+    max-width: 350px;
+    border-radius: 1rem;
+}
+.sampleMenu h3,
+.sampleMenu div{
+    background-color: var(--orangeLt);
+
+}
+
+/*--------- Modal Pop-up --------------*/
+
+
+/*--------- Hero Component --------------*/
+
+/*--------- Carousel --------------*/
+
+
+/*--------- Order App --------------*/
