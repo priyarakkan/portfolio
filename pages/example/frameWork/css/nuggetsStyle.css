@@ -533,7 +533,7 @@ blockquote p:last-child{margin-bottom: 0;}
 
 /* Custom Styling  */
 .display-box{margin-top: 15px; padding: 4px; border-radius: 4px; place-items: center;border: 1px solid var(--blueLt);}
-.display-list         {margin: 5px 0 5px 8px;}
+.display-list{margin: 5px 0 5px 8px;}
 .element,.component{border-bottom: dashed 1px var(--blueDk);}
 
 
@@ -579,9 +579,7 @@ blockquote p:last-child{margin-bottom: 0;}
     padding: 1em;
     border-radius: 50%;
     width: 2em;
-    height: 2em;
-    
-  
+    height: 2em; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -636,9 +634,7 @@ blockquote p:last-child{margin-bottom: 0;}
     display:inline-block;
     transition:all .3s ease
 }
-.sampleArrowIcon{
-    transform:rotate(180deg)
-}
+.sampleArrowIcon{transform:rotate(180deg)}
 .sampleSubMenu{
     position:absolute;
     top:50px;left:0;
@@ -653,9 +649,7 @@ blockquote p:last-child{margin-bottom: 0;}
     border-bottom:1px solid var(--yellowLt)
 }
 .sampleSubMenu a{color:var(--yellowLt)}
-li:hover .sampleSubMenu{
-    display:block
-}
+li:hover .sampleSubMenu{display:block}
 .sampleMenuIcon,
 .sampleLogoName,
 .sampleCloseIcon{display:none}
@@ -706,40 +700,32 @@ li:hover .sampleSubMenu{
     left:.75rem;
     box-shadow:none
     }
-    .sampleSubMenu li{
-    border-bottom:none
-    }
-    .sampleArrowIcon{
-    transform:rotate(0deg)
-    }
-    .sampleSubMenu{
-    display:block
-    }
-    .sampleArrowIcon{
-    transform:rotate(180deg)
-    }
+    .sampleSubMenu li{border-bottom:none}
+    .sampleArrowIcon{transform:rotate(0deg)}
+    .sampleSubMenu{display:block}
+    .sampleArrowIcon{transform:rotate(180deg)}
 }
 
 /*--------- Cards --------------*/
 .sampleMenu{
-    max-width: 350px;
-    border-radius: 1rem;
+    max-width: 450px;
+    /* border-radius: 2.5rem; */
+}
+.sampleMenuImg:hover{
+    transform:scale(1.02)
 }
 .sampleMenu h3,
-.sampleMenu div{
-    background-color: var(--orangeLt);
-
+.sampleMenu div{background-color: var(--orangeLt);}
+#compInnerCards{
+    max-width:450px;
 }
-
 /*--------- Carousel --------------*/
 .carousel {
     height: min(450px, 61vw);
     padding-bottom: 3em;
     max-width: 1000px;
   }
-  .carouselSlide {
-    background-color: transparent;
-  }
+  .carouselSlide {background-color: transparent;}
   .carousel {
     max-width: calc(100% - 80px);
     margin: 0 auto;
@@ -794,12 +780,8 @@ li:hover .sampleSubMenu{
     transition: background-color .5s;
     padding: 0;
 }
-.carouselIndicator.currentSlide {
-  background-color: rgba(0,0,0,.15);
-}
-.isHidden {
-  display: none;
-}
+.carouselIndicator.currentSlide {background-color: rgba(0,0,0,.15);}
+.isHidden {display: none;}
 
 /*--------- Order App --------------*/
 form {
@@ -812,21 +794,11 @@ form {
     justify-content: end;
     padding: 0 .5em;
   }
-  label:nth-child(even) {
-    background-color: rgba(255,255,255,.1);
-  }
-  .pageTitle {
-    padding: 1em;
-  }
-  .itemName {
-    flex-grow: 1;
-  }
-  .carouselSlide {
-    background-color: transparent;
-  }
-  #orderPopup>h3, #orderPopup li, #orderTotal {
-    padding: 1em;
-  }
+  label:nth-child(even) {background-color: rgba(255,255,255,.1);}
+  .pageTitle {padding: 1em;}
+  .itemName {flex-grow: 1;}
+  .carouselSlide {background-color: transparent;}
+  #orderPopup>h3, #orderPopup li, #orderTotal {padding: 1em;}
   #orderUp {
     width: min(50vw, 300px);
     margin: 1em auto;
@@ -902,12 +874,9 @@ form {
     transform: translate(-50%, -50%) scale(1);
     z-index: 15;
   }
-  .open-popup, .open-popup .popup {
-    visibility: visible;
-  }
+  .open-popup, .open-popup .popup {visibility: visible;}
   @media screen and (min-width: 600px){
-    .popup {
-      width: 400px; }
+    .popup {width: 400px; }
   }
 
   @media screen and (min-width: 800px) {
@@ -915,12 +884,8 @@ form {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
-    label:nth-child(even) {
-      background-color: transparent;
-    }
-    label:nth-child(3n), label:nth-child(5n-3){
-      background-color: rgba(255,255,255,.1);
-    }
+    label:nth-child(even) {background-color: transparent;}
+    label:nth-child(3n), label:nth-child(5n-3){background-color: rgba(255,255,255,.1);}
    #orderUp {
       grid-column: span 2;
       align-self: center;
